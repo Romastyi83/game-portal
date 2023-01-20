@@ -1,0 +1,176 @@
+text-transform()
+  letter-spacing -0.05em
+  text-transform uppercase
+.btn
+  display inline-block
+  line-height 38px
+  border 1px solid #3499FD
+  border-radius 90px
+  font-weight 600
+  font-size 13px
+  text-transform()
+  text-align center
+  color #fff
+  padding 0 24px
+  +element(main)
+    font-weight 800
+    font-size 14px
+    background-color #47A2FD
+    border 1px solid #2777C8
+    transition all .3s ease
+    &:hover
+      background-color #2777C8
+  +element(tel)
+    margin-left 30px
+    transition all .3s ease
+    &:hover
+      background-color #3499FD
+  +element(products-more)
+    color #0D0D0D
+    position absolute
+    top 50%
+    left 50%
+    transform translate(-50%, -50%)
+    border 1px solid #0D0D0D
+    background-color #fff
+  +element(large)
+    min-width 270px
+    line-height 58px
+    background: #47A2FD;
+    padding 0 25px
+    font-size 19px
+    font-weight 800
+    margin-top 11px
+    transition all .3s linear
+    &:hover
+      background-color #2777C8
+  +element(dots-wrapper)
+    width 70px
+    height 38px
+    display flex
+    align-items center
+    flex-shrink 0
+    align-self flex-end
+    background-color #fff
+    border 1px solid #DCDCDC
+    border-radius 90px
+    padding 4px
+    cursor pointer
+  +element(dots-inner)
+    width 62px
+    height 30px
+    display flex
+    align-items center
+    justify-content flex-end
+    background-image linear-gradient(180deg, #FFE600 0%, #FFB800 100%)
+    border-radius 90px
+    padding 0 9px
+    user-select none
+    transition all .3s ease
+    +modifier(slider)
+      width 29px
+  +element(review)
+    position absolute
+    top 50%
+    right 4px
+    transform translateY(-50%)
+    width 76px
+    height 30px
+    line-height 30px
+    background-color #fff
+    border 1px solid #797979
+    border-radius 7px
+    font-weight 800
+    font-size 10px
+    text-align center
+    color #797979
+    text-transform()
+    padding 0 10px
+    cursor pointer
+  +element(publish)
+    min-width 175px
+    height 40px
+    line-height 40px
+    display flex
+    justify-content center
+    align-items center
+    gap 8px
+    background-color #fff
+    border 1px solid #000
+    border-radius 7px
+    outline none
+    cursor pointer
+    padding 0 15px
+  +element(publish-text)
+    font-weight 800
+    text-transform()
+    font-size 14px
+    color #000
+  +element(del)
+    width 116px
+    height 40px
+    line-height 40px
+    display flex
+    justify-content center
+    align-items center
+    gap 8px
+    background #FF0000
+    border-radius 7px
+    cursor pointer
+    +modifier(large)
+      width 196px
+    +modifier(inner)
+      position absolute
+      left 12px
+      bottom -20px
+  +element(del-wrapper)
+    margin-top 18px
+  +element(del-text)
+    font-weight 800
+    font-size 14px
+    color #fff
+    text-transform()
+  +element(reset-text)
+      font-size 11px
+      font-weight 600
+      letter-spacing -.05em
+      color #fff
+  +element(footer-wrapper)
+    width 100%
+    display flex
+    justify-content center
+    margin-top 10px
+  +element(footer)
+    min-width 381px
+    height 40px
+    line-height 40px
+    display flex
+    justify-content center
+    align-items center
+    background-image linear-gradient(180deg, #FFE600 0%, #FFB800 100%)
+    border 1px solid #000
+    border-radius 7px
+    outline none
+    cursor pointer
+    padding 0 15px
+  +element(footer-text)
+    font-weight 800
+    font-size 14px
+    text-transform()
+    color #000
+  +element(reset)
+    width 100%
+    height 40px
+    line-height 40px
+    display flex
+    justify-content space-between
+    align-items center
+    background #FF0000
+    border 2px solid #560404
+    border-radius 7px
+    padding 0 13px
+    cursor pointer
+  +element(reset-inner)
+    display flex
+    align-items center
+    gap 8px

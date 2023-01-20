@@ -1,0 +1,132 @@
+.settings
+  max-width 682px
+  display flex
+  gap 28px
+  margin-bottom 10px
+  &:last-child
+    margin-bottom 0
+  +element(wrapper)
+    position absolute
+    top 20px
+    left 26px
+    right 26px
+    +modifier(head)
+      top 59px
+    +modifier(hero)
+      top 135px
+  +element(item)
+    position relative
+    min-width 326px
+    display flex
+    flex-direction column
+    gap 10px
+    +modifier(large)
+      flex-grow 1
+    +modifier(no-title)
+      padding-top 26px
+    +modifier(footer)
+      flex-grow 1
+    +modifier(normal)
+      min-width 260px
+  +element(row)
+    display flex
+    align-items center
+    gap 11px
+  +element(title)
+    display block
+    font-weight 500
+    font-size 16px
+    letter-spacing -0.05em
+    color #000
+    margin-bottom 8px
+    +modifier(item)
+      min-height 16px
+      margin-bottom 0
+  +element(label)
+    position relative
+    width 186px
+    display flex
+    flex-direction column
+    +modifier(small)
+      width 130px
+    +modifier(large)
+      flex-grow 1
+  +element(input)
+    height 38px
+    width 100%
+    background-color transparent
+    border 1px solid #DCDCDC
+    border-radius 8px
+    font-weight 400
+    font-size 14px
+    letter-spacing -0.05em
+    color #000
+    overflow hidden
+    -o-text-overflow ellipsis
+    -ms-text-overflow ellipsis
+    text-overflow ellipsis
+    padding 0 11px
+    outline 0
+    &:focus
+      border 1px solid #797979
+    
+    +modifier(icon)
+      padding-right 35px
+  +element(input-wrapper)
+    position relative
+  +element(img)
+    position absolute
+    top 50%
+    right 11px
+    transform translateY(-50%)
+    cursor pointer
+  +element(textarea)
+    width 100%
+    min-height 155px
+    background #fff
+    border 1px solid #DCDCDC
+    border-radius 8px
+    outline none
+    font-family 'Inter', sans-serif
+    font-weight 400
+    font-size 14px
+    line-height 1.2
+    letter-spacing -0.05em
+    color #000000
+    padding 12px
+    resize none
+    +modifier(high)
+      min-height 270px
+    +modifier(footer)
+      min-height 254px
+    &:focus
+      border 1px solid #797979
+  +element(item-del)
+    position absolute
+    top 0
+    right 0
+    cursor pointer
+  +element(star-text-wrapper)
+    display flex
+    align-items flex-start
+    padding-top 10px
+  +element(star-text)
+    padding-left 10px
+    padding-top 2px
+  +element(warning-text)
+    font-style italic
+    font-size 14px
+    line-height 120.02%
+    letter-spacing -0.05em
+    color #8C1C1C
+    span
+      display block
+      font-style italic
+      font-size 14px
+      line-height 120.02%
+      letter-spacing -0.05em
+      color #8C1C1C
+      font-weight 700
+      margin-bottom 17px
+  +element(footer)
+    max-width none

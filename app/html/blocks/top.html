@@ -1,0 +1,99 @@
+<div class="wrapper">
+
+  <header class="header">
+    @@include('settings-control-center.html')
+    @@include('settings-head.html')
+    <div class="header__inner">
+
+      <div class="header__item">
+        <i data-control-center>
+          <img src="img/svg/control-center.svg" alt="control-center">
+        </i>
+
+        <span class="header__item-text">Центр управления сайтом</span>
+      </div>
+      <div class="header__item">
+        <i>
+          <img src="img/svg/lk.svg" alt="lk">
+        </i>
+        <span class="header__item-text">в личный кабинет</span>
+      </div>
+    </div>
+    <div class="header__curtain">
+
+      <div class="container">
+        <div class="header__curtain-inner">
+          <div class="header__curtain-item header__curtain-item--content">
+            <i>
+              <img src="img/svg/content.svg" alt="content">
+            </i>
+            <span class="header__curtain-text header__curtain-text--content">Содержание</span>
+          </div>
+          <div class="header__curtain-item header__curtain-item--logo">
+            <i>
+              <img src="img/svg/logo.svg" alt="logo">
+            </i>
+            <span class="header__curtain-text header__curtain-text--logo">Название компании</span>
+          </div>
+          <div class="header__curtain-item header__curtain-item--tel">
+
+            <span class="header__curtain-text header__curtain-text--tel">8 800 555 35 35</span>
+            <a class="btn btn__tel" href="#">заказать звонок</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    @@include('settings-slider.html')
+    <div class="top-swiper">
+      <div class="swiper-pagination"></div>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="hero">
+            <div class="container">
+              <div class="hero__inner">
+                <div class="hero__img-holder">
+                  <img class="hero__img" src="img/hero-img.png" alt="img">
+                </div>
+                <div class="hero__main">
+                  <h1 class="title__main"><span>крутые сборки</span> для pro геймеров</h1>
+                  <div class="hero__desc-item">
+                    <span class="hero__desc">Всегда в наличии и под заказ!</span>
+                    <a class="btn btn__main" href="#">купить сейчас</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="hero hero__slide-1">
+
+            <div class="container">
+              <div class="hero__inner">
+                <div class="hero__img-holder">
+                  <img class="hero__img" src="img/headphone.jpg" alt="img">
+                </div>
+                <div class="hero__main">
+                  <h1 class="title__main"><span>крутые сборки</span> для pro геймеров</h1>
+                  <div class="hero__desc-item">
+                    <span class="hero__desc">Всегда в наличии и под заказ!</span>
+                    <a class="btn btn__main" href="#">купить сейчас</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    @@include('section-1.html')
+    @@include('section-2.html')
+    @@include('section-img.html')
+    @@include('section-news.html')
+    @@include('recall.html')
+    @@include('map.html')
+  </main>
+  @@include('footer.html')
+</div>

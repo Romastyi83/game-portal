@@ -1,0 +1,93 @@
+.popup
+  position absolute
+  top 0
+  left 0
+  width 100%
+  border 1px solid #FFE600
+  z-index 999
+  display none
+  &.active
+    display block
+  +element(footer)
+    top auto
+    bottom -40px
+  +element(head)
+    height 39px
+    display flex
+    justify-content space-between
+    align-items center
+    background-image linear-gradient(180deg, #FFE600 0%, #FFB800 100%)
+    backdrop-filter blur(2px)
+    padding 0 15px
+  +element(head-item)
+    display flex
+    align-items center
+  +element(close)
+    display flex
+    align-items center
+    cursor pointer
+  +element(head-text)
+    font-weight 800
+    font-size 13px
+    text-transform()
+    margin-left 10px
+  +element(body)
+    
+    background-color #fff
+  +element(body-inner)
+    display flex
+    justify-content space-between
+    gap 28px
+    padding 40px 42px 33px
+  +element(item)
+    display flex
+    flex-direction column
+    justify-content space-between
+    flex-grow 1
+    +modifier(right-side)
+      width 539px
+      flex-grow 0
+    +modifier(group-footer)
+      width 66.66%
+    +modifier(footer)
+      width 33.33%
+    +modifier(no-title)
+      padding-top 40px
+  +element(item-inner)
+    & + &
+      padding-top 45px
+  +element(title)
+    font-weight 800
+    font-size 18px
+    color #000
+    text-transform()
+    margin-bottom 22px
+    +modifier(item)
+      margin-bottom 10px
+  +element(bottom)
+    position relative
+    min-height 71px
+    background #EAEAEA
+    backdrop-filter blur(2px)
+    padding 0 16px 7px
+    display flex
+    justify-content space-between
+    align-items center
+    &:after
+      content ''
+      position absolute
+      height 7px
+      width 100%
+      left 0
+      bottom 0
+      background-color red
+      background-image url(../img/svg/popup-bottom.svg)
+      background-position center left
+      background-repeat repeat-x
+    +modifier(right)
+      justify-content flex-end
+  +element(bottom-side)
+    display flex
+    justify-content center
+    align-items center
+    gap 10px

@@ -1,0 +1,41 @@
+.news
+  +element(content)
+    padding-top 15px
+    margin-left 33px
+  +element(item)
+    display flex
+    justify-content space-between
+    align-items flex-start
+    & + &
+      margin-top 42px
+  +element(p)
+    font-weight 300
+    font-size 15px
+    line-height 1.4
+    color #000
+  +element(heading)
+    font-weight 700
+    font-size 24px
+    letter-spacing -0.05em
+    color #3D3D3D
+    margin-bottom 11px
+  +element(img-wrapper)
+    position relative
+    img
+      display block
+  +element(date)
+    position absolute
+    top 16px
+    right 0
+    min-width 120px
+    height 31px
+    background #fff
+    border-radius 4px 0px 0px 4px
+    font-weight 400
+    font-size 13px
+    letter-spacing -0.05em
+    color #000
+    display flex
+    justify-content center
+    align-items center
+    padding 0 10px

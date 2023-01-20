@@ -1,0 +1,46 @@
+.popup
+  +element(slider)
+    display flex
+    justify-content center
+    align-items center
+    gap 27px
+  +element(slider-arrow)
+    width 30px
+    height 30px
+    background-color #fff
+    border 1px solid #000
+    border-radius 7px
+    display flex
+    justify-content center
+    align-items center
+    cursor pointer
+  +element(slider-dot)
+    width 15px
+    height 15px
+    background-color transparent
+    border 1px solid #000
+    border-radius 50%
+    &.active
+      background #000
+  +element(slider-dots-holder)
+    display flex
+    justify-content center
+    align-items center
+    gap 6px
+  +element(pm-slider)
+    display flex
+    justify-content space-between
+    width 129px
+    background #fff
+    border 1px solid #DCDCDC
+    border-radius 8px
+    padding 4px
+  +element(slider-number-holder)
+    display flex
+    align-items center
+    justify-content center
+  +element(slider-number)
+    font-weight 400
+    font-size 14px
+    letter-spacing -0.05em
+    color #000

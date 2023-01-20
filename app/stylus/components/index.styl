@@ -1,0 +1,160 @@
+*
+  margin 0
+  padding 0
+  box-sizing border-box
+  line-height 1
+  font-family 'Inter', sans-serif
+  color #000
+  &:before
+    box-sizing border-box
+h1, h2, h3, h4, h5, h6
+  margin 0
+ul
+  list-style none
+a
+  text-decoration none
+img
+  display block
+text-transform()
+  letter-spacing -0.05em
+  text-transform uppercase
+.wrapper
+  min-height 100vh
+  overflow hidden
+  min-height 2000px
+.container
+  max-width 1200px
+  margin 0 auto
+  padding 0 15px
+.header
+  position fixed
+  width 100%
+  top 0
+  left 0
+  z-index 111
+  +element(inner)
+    height 39px
+    display flex
+    justify-content space-between
+    align-items center
+    background-image linear-gradient(180deg, #FFE600 0%, #FFB800 100%)
+    backdrop-filter blur(2px)
+    padding 0 15px
+  +element(item)
+    display flex
+    align-items center
+    cursor pointer
+  +element(item-text)
+    font-weight 800
+    font-size 13px
+    text-transform()
+    margin-left 10px
+  +element(curtain)
+    background rgba(0, 20, 49, 0.8)
+    backdrop-filter blur(3.5px)
+  +element(curtain-inner)
+    height 80px
+    display flex
+    justify-content space-between
+    align-items center
+  +element(curtain-item)
+    display flex
+    justify-content space-between
+    align-items center
+    +modifier(content)
+      cursor pointer
+    +modifier(logo)
+      margin-left 67px
+    +modifier(tel)
+      margin-left auto
+  +element(curtain-text)
+    font-weight 500
+    font-size 16px
+    line-height 19px
+    text-transform()
+    color #fff
+    +modifier(content)
+      margin-left 7px
+    +modifier(logo)
+      font-weight 800
+      margin-left 16px
+    +modifier(tel)
+      font-size 18px
+      font-weight 800
+
+.hero
+  position relative
+  background-image url(../img/hero.png)
+  background-size cover
+  background-repeat no-repeat
+  background-position center top
+  +element(inner)
+    min-height 639px
+    display flex
+    align-items center
+    padding-top 120px
+    margin-left 60px
+  +element(desc-item)
+    display flex
+    justify-content space-between
+    align-items center
+    margin-top 38px
+  +element(desc)
+    font-weight 300
+    font-size 24px
+    letter-spacing -0.05em
+    color #fff
+  +element(img-holder)
+    height 165px
+    width 165px
+    border-radius 50%
+    overflow hidden
+    margin-right 38px
+    margin-bottom 78px
+    display flex
+    justify-content center
+    align-items center
+  +element(img)
+    max-width 100%
+  +element(slide-1)
+    background-image url(../img/hero-1.jpg)
+.title
+  +element(main)
+    font-weight 800
+    font-size 72px
+    color #fff
+    text-transform()
+    span
+      display block
+      font-size 48px
+      color #fff
+      text-transform()
+  +element(second)
+    max-width 950px
+    font-weight 800
+    font-size 48px
+    letter-spacing -0.05em
+    color #001431
+    +modifier(gr)
+      text-align center
+      margin 0 auto
+      color rgba(0, 20, 49, 0.8)
+      margin-bottom 62px
+      
+    +modifier(leader)
+      margin-bottom 46px
+    +modifier(news)
+      text-align center
+      margin 0 auto
+      margin-bottom 55px
+      
+    +modifier(recall)
+      
+      text-align center
+      margin 0 auto
+      margin-bottom 55px
+.img
+  +element(keyboard)
+    width 37.22%
+  +element(workplace)
+    width 62.78%

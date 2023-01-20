@@ -1,0 +1,57 @@
+.section
+  position relative
+  padding-top 60px
+  padding-bottom 58px
+  +element(blue-bg)
+    background-color #E2F1FF
+    box-shadow inset 0px 0px 28px #C1E0FF
+  +element(recall)
+    padding-bottom 111px
+.products
+  display flex
+  gap 30px
+  flex-wrap wrap
+  +element(sep)
+    position relative
+    height 1px
+    background-color #0D0D0D
+    margin-top 56px
+  +element(more)
+    margin-top 30px
+    display none
+.product
+  position relative
+  border-radius 8px
+  overflow hidden
+  +element(desc)
+    position absolute
+    bottom 0
+    left 0
+    height 91px
+    width 100%
+    display flex
+    flex-direction column
+    justify-content center
+    background rgba(0, 20, 49, 0.9)
+    backdrop-filter blur(2px)
+    padding-left 27px
+    padding-top 5px
+  +element(name)
+    font-weight 800
+    font-size 24px
+    letter-spacing -0.05em
+    color #fff
+    margin-bottom 5px
+  +element(price)
+    font-weight 800
+    font-size 20px
+    letter-spacing -0.05em
+    color #fff
+    span
+      font-weight 500
+      font-size 14px
+      text-decoration line-through
+      color #fff
+      vertical-align top
+      margin-left 8px
+  
