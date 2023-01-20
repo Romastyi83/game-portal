@@ -32,7 +32,6 @@
     text-transform()
     margin-left 10px
   +element(body)
-    
     background-color #fff
   +element(body-inner)
     display flex
@@ -54,7 +53,8 @@
     +modifier(no-title)
       padding-top 40px
   +element(item-inner)
-    & + &
+    padding-top 12px
+    +modifier(indent)
       padding-top 45px
   +element(title)
     font-weight 800
