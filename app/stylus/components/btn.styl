@@ -21,8 +21,14 @@ text-transform()
     &:hover
       background-color #2777C8
   +element(tel)
+    min-height 40px
+    display flex
+    align-items center
     margin-left 30px
+    line-height 1
     transition all .3s ease
+    +mq(0, 767px)
+      font-size 12px
     &:hover
       background-color #3499FD
   +element(products-more)
@@ -33,6 +39,8 @@ text-transform()
     transform translate(-50%, -50%)
     border 1px solid #0D0D0D
     background-color #fff
+    +mq(0, 767px)
+      padding 0 10px
   +element(large)
     min-width 270px
     line-height 58px

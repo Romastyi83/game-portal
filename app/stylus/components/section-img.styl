@@ -1,2 +1,16 @@
 .workplace
   display flex
+  +mq(0, 500px)
+    flex-direction column
+.img
+  +element(keyboard)
+    width 37.22%
+    +mq(0, 500px)
+      width 100%
+      max-height 197px
+  +element(workplace)
+    width 62.78%
+    
+    +mq(0, 500px)
+      width 100%
+      max-height 197px

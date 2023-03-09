@@ -2,15 +2,23 @@
   position relative
   padding-top 60px
   padding-bottom 58px
+  +mq(0, 767px)
+    padding-top 25px
+    padding-bottom 35px
   +element(blue-bg)
     background-color #E2F1FF
     box-shadow inset 0px 0px 28px #C1E0FF
   +element(recall)
     padding-bottom 111px
+    +mq(0, 767px)
+      padding-bottom 35px
 .products
   display flex
+  justify-content center
   gap 30px
   flex-wrap wrap
+  +mq(0, 767px)
+    gap 16px
   +element(sep)
     position relative
     height 1px
@@ -23,6 +31,12 @@
   position relative
   border-radius 8px
   overflow hidden
+  +mq(0, 767px)
+    max-height 200px
+    max-width 370px
+    display flex
+    justify-content center
+    align-items center
   +element(desc)
     position absolute
     bottom 0
@@ -54,4 +68,6 @@
       color #fff
       vertical-align top
       margin-left 8px
+  img
+    max-width 100%
   

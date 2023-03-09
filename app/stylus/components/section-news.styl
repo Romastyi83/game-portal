@@ -2,27 +2,40 @@
   +element(content)
     padding-top 15px
     margin-left 33px
+    +mq(0, 767px)
+      margin-left 0
   +element(item)
     display flex
     justify-content space-between
     align-items flex-start
+    +mq(0, 767px)
+      flex-direction column
     & + &
       margin-top 42px
+      +mq(0, 767px)
+        margin-top 25px
   +element(p)
     font-weight 300
     font-size 15px
     line-height 1.4
     color #000
+    +mq(0, 767px)
+      font-size 14px
   +element(heading)
     font-weight 700
     font-size 24px
     letter-spacing -0.05em
     color #3D3D3D
     margin-bottom 11px
+    +mq(0, 767px)
+      font-size 18px
+      line-height 22px
   +element(img-wrapper)
     position relative
     img
       display block
+      +mq(0, 767px)
+        max-width 100%
   +element(date)
     position absolute
     top 16px

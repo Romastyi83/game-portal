@@ -78,9 +78,13 @@ text-transform()
     +modifier(logo)
       font-weight 800
       margin-left 16px
+      +mq(0, 767px)
+        font-size 20px
+        line-height 24px
     +modifier(tel)
       font-size 18px
       font-weight 800
+      white-space nowrap
 
 .hero
   position relative
@@ -94,6 +98,9 @@ text-transform()
     align-items center
     padding-top 120px
     margin-left 60px
+    +mq(0, 767px)
+      flex-direction column
+      align-items center
   +element(desc-item)
     display flex
     justify-content space-between
@@ -114,6 +121,10 @@ text-transform()
     display flex
     justify-content center
     align-items center
+    flex-shrink 0
+    +mq(0, 767px)
+      height 90px
+      width 90px
   +element(img)
     max-width 100%
   +element(slide-1)
@@ -135,26 +146,34 @@ text-transform()
     font-size 48px
     letter-spacing -0.05em
     color #001431
+    +mq(0, 767px)
+      font-size 32px
+      line-height 39px
+      text-align center
     +modifier(gr)
       text-align center
       margin 0 auto
       color rgba(0, 20, 49, 0.8)
       margin-bottom 62px
-      
+      +mq(0, 767px)
+        font-size 24px
+        line-height 1.2
+        margin-bottom 25px
     +modifier(leader)
       margin-bottom 46px
+      +mq(0, 767px)
+        margin-bottom 25px
     +modifier(news)
       text-align center
       margin 0 auto
       margin-bottom 55px
-      
+      +mq(0, 767px)
+        margin-bottom 25px
     +modifier(recall)
-      
       text-align center
       margin 0 auto
       margin-bottom 55px
-.img
-  +element(keyboard)
-    width 37.22%
-  +element(workplace)
-    width 62.78%
+      +mq(0, 767px)
+        font-size 24px
+        line-height 1.2
+        margin-bottom 25px

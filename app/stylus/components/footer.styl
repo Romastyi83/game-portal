@@ -23,14 +23,24 @@
     text-decoration underline
 .creation
   +element(holder)
+    position relative
     display flex
     align-items center
+    +mq(0, 767px)
+      align-items flex-end
   +element(text)
     font-weight 400
     font-size 10px
     letter-spacing -0.05em
     color #7A7A7A
     margin-right 8px
+    +mq(0, 767px)
+      max-width 50px
+      display block
+      position absolute
+      top 0
+      right 0
+      margin-right 0
   +element(info)
     font-weight 900
     font-size 11px

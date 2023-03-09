@@ -1,13 +1,41 @@
 .leader
   +element(content)
     max-width 665px
+    margin 0 auto
+    +mq(0, 767px)
+      display flex
+      flex-direction column
+      align-items center
   +element(p)
     font-weight 300
     font-size 18px
     color #000
     line-height 1.4
     margin-bottom 24px
+    +mq(0, 767px)
+      font-size 16px
   +element(inner)
     display flex
     justify-content space-between
     align-items flex-start
+    gap 25px
+  +element(img-wrap)
+    min-width 325px
+    overflow hidden
+    +mq(0, 767px)
+      display none
+  +element(img-wrap-mob)
+    display none
+    height 101px
+    
+    justify-content center
+    align-items center
+    border-radius 8px
+    overflow hidden
+    margin-bottom 20px
+    +mq(0, 767px)
+      display flex
+    img
+      margin-top 54px
+  +element(img)
+    max-width 100%
