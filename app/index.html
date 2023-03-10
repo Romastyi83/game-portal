@@ -173,7 +173,7 @@
           <div class="settings">
 
             <div class="settings__item settings__item--large">
-              <div class="settings__row">
+              <div class="settings__row settings__row--column">
                 <div class="settings__label settings__label--large">
                   <span class="settings__title">Логин</span>
                   <input class="settings__input" type="text" value="username">
@@ -211,10 +211,10 @@
                     <i>
                       <img src="img/svg/del.svg" alt="delete">
                     </i>
-                    <span class="btn__del-text">Сбросить сайт до пустого шаблона</span>
-                  </div>
-                  <div>
-                    <span class="btn__reset-text">Наполнение сайта будет удалено</span>
+                    <div class="btn__reset-wrap">
+                      <span class="btn__del-text">Сбросить сайт до пустого шаблона</span>
+                      <span class="btn__reset-text">Наполнение сайта будет удалено</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -249,7 +249,7 @@
         </i>
       </div>
     </div>
-    <div class="popup__body">
+    <div class="popup__body popup__body--head">
       <div class="popup__body-inner">
         <div class="popup__item">
           <div class="popup__item-inner">
@@ -362,21 +362,32 @@
 
       <div class="container">
         <div class="header__curtain-inner">
-          <div class="header__curtain-item header__curtain-item--content">
-            <i>
-              <img src="img/svg/content.svg" alt="content">
-            </i>
-            <span class="header__curtain-text header__curtain-text--content">Содержание</span>
+          <div class="header__curtain-holder">
+            <div class="header__curtain-item header__curtain-item--content">
+              <i>
+                <img src="img/svg/content.svg" alt="content">
+              </i>
+              <span class="header__curtain-text header__curtain-text--content title__menu">Содержание</span>
+              <span class="header__curtain-text header__curtain-text--content title__menu--mob">Меню</span>
+            </div>
+            <div class="header__curtain-item header__curtain-item--logo title__menu">
+              <i>
+                <img src="img/logo.png" alt="logo">
+              </i>
+              <span class="header__curtain-text header__curtain-text--logo">Название компании</span>
+            </div>
+            <div class="header__curtain-item header__curtain-item--tel">
+              <span class="header__curtain-text header__curtain-text--tel">8 800 555 35 35</span>
+              <a class="btn btn__tel title__menu" href="#">заказать звонок</a>
+            </div>
           </div>
-          <div class="header__curtain-item header__curtain-item--logo">
-            <i>
-              <img src="img/svg/logo.svg" alt="logo">
-            </i>
-            <span class="header__curtain-text header__curtain-text--logo">Название компании</span>
-          </div>
-          <div class="header__curtain-item header__curtain-item--tel">
-
-            <span class="header__curtain-text header__curtain-text--tel">8 800 555 35 35</span>
+          <div class="header__curtain-holder header__curtain-holder--mob">
+            <div class="header__curtain-item header__curtain-item--logo">
+              <i>
+                <img src="img/logo-mob.png" alt="logo">
+              </i>
+              <span class="header__curtain-text header__curtain-text--logo">Название компании</span>
+            </div>
             <a class="btn btn__tel" href="#">заказать звонок</a>
           </div>
         </div>
@@ -871,7 +882,7 @@
           <div class="popup__item-inner">
             <div class="settings">
               <div class="settings__item settings__item--large">
-                <div class="settings__row">
+                <div class="settings__row settings__row--column">
                   <div class="settings__label settings__label--large">
                     <span class="settings__title">Фоновая картинка блока</span>
                     <div class="settings__input-wrapper">
@@ -1175,7 +1186,7 @@ Nunc in laoreet elit, in interdum augue. Nullam ullamcorper est orci. Sed sem qu
           <div class="popup__item-inner">
             <div class="settings">
               <div class="settings__item settings__item--large">
-                <div class="settings__row">
+                <div class="settings__row settings__row--column">
                   <div class="settings__label settings__label--large">
                     <span class="settings__title">Фоновая картинка блока</span>
                     <div class="settings__input-wrapper">
@@ -1294,7 +1305,7 @@ Nunc in laoreet elit, in interdum augue. Nullam ullamcorper est orci. Sed sem qu
                   <input class="settings__input" type="text" value="Новейшая сборка мощного PC">
                 </div>
               </div>
-              <div class="settings__row">
+              <div class="settings__row settings__row--bot-indent">
                 <div class="settings__label settings__label--large">
                   <span class="settings__title">Текст</span>
                   <textarea class="settings__textarea settings__textarea--high">
@@ -1337,7 +1348,7 @@ Nunc in laoreet elit, in interdum augue. Nullam ullamcorper est orci. Sed sem qu
                   <input class="settings__input" type="text" value="Снова в продаже водяное охладжение от Ther...">
                 </div>
               </div>
-              <div class="settings__row">
+              <div class="settings__row settings__row--bot-indent">
                 <div class="settings__label settings__label--large">
                   <span class="settings__title">Текст</span>
                   <textarea class="settings__textarea settings__textarea--high">
@@ -1433,7 +1444,7 @@ Nunc in laoreet elit, in interdum augue. Nullam ullamcorper est orci. Sed sem qu
           <div class="popup__item-inner">
             <div class="settings">
               <div class="settings__item settings__item--large">
-                <div class="settings__row">
+                <div class="settings__row settings__row--column">
                   <div class="settings__label settings__label--large">
                     <span class="settings__title">Фоновая картинка блока</span>
                     <div class="settings__input-wrapper">
@@ -1613,7 +1624,7 @@ Nunc in laoreet elit, in interdum augue. Nullam ullamcorper est orci. Sed sem qu
                   <input class="settings__input" type="text" value="Александр Алексеев">
                 </div>
               </div>
-              <div class="settings__row">
+              <div class="settings__row settings__row--bot-indent">
                 <div class="settings__label settings__label--large">
                   <span class="settings__title">Текст</span>
                   <textarea class="settings__textarea settings__textarea--high">
@@ -1660,7 +1671,7 @@ Nunc in laoreet elit, in interdum augue. Nullam ullamcorper est orci. Sed sem qu
                   <input class="settings__input" type="text" value="Александр Алексеев">
                 </div>
               </div>
-              <div class="settings__row">
+              <div class="settings__row settings__row--bot-indent">
                 <div class="settings__label settings__label--large">
                   <span class="settings__title">Текст</span>
                   <textarea class="settings__textarea settings__textarea--high">
@@ -1756,7 +1767,7 @@ Nunc in laoreet elit, in interdum augue. Nullam ullamcorper est orci. Sed sem qu
           <div class="popup__item-inner">
             <div class="settings">
               <div class="settings__item settings__item--large">
-                <div class="settings__row">
+                <div class="settings__row settings__row--column">
                   <div class="settings__label settings__label--large">
                     <span class="settings__title">Фоновая картинка блока</span>
                     <div class="settings__input-wrapper">
@@ -1898,7 +1909,7 @@ Nunc in laoreet elit, in interdum augue. Nullam ullamcorper est orci. Sed sem qu
   <div class="pencil" data-pencil>
     <img src="img/svg/pencil.svg" alt="pencil">
   </div>
-  <div class="popup" data-popup>
+  <div class="popup popup__contacts" data-popup>
     <div class="popup__head">
       <div class="popup__head-item">
         <i>
@@ -1916,7 +1927,7 @@ Nunc in laoreet elit, in interdum augue. Nullam ullamcorper est orci. Sed sem qu
       <div class="popup__body-inner">
         <div class="popup__item">
 
-          <div class="settings">
+          <div class="settings settings--gap">
             <div class="settings__item">
               <h3 class="popup__title popup__title--item">филиал №1</h3>
               <div class="settings__row">
@@ -2096,7 +2107,7 @@ Nunc in laoreet elit, in interdum augue. Nullam ullamcorper est orci. Sed sem qu
       <div class="popup__body-inner">
         <div class="popup__item popup__item--group-footer">
 
-          <div class="settings settings__footer">
+          <div class="settings settings__footer settings--gap">
             <div class="settings__item settings__item--footer">
               <h3 class="popup__title popup__title--item">левый блок</h3>
               <div class="settings__row">
@@ -2176,7 +2187,7 @@ Nunc in laoreet elit, in interdum augue. Nullam ullamcorper est orci. Sed sem qu
           <div class="popup__item-inner">
             <div class="settings">
               <div class="settings__item settings__item--large">
-                <div class="settings__row">
+                <div class="settings__row settings__row--column">
                   <div class="settings__label settings__label--large">
                     <span class="settings__title">Фоновая картинка блока</span>
                     <div class="settings__input-wrapper">

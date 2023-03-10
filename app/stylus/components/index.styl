@@ -21,7 +21,6 @@ text-transform()
 .wrapper
   min-height 100vh
   overflow hidden
-  min-height 2000px
 .container
   max-width 1200px
   margin 0 auto
@@ -32,6 +31,8 @@ text-transform()
   top 0
   left 0
   z-index 111
+  &.active
+    position relative
   +element(inner)
     height 39px
     display flex
@@ -53,10 +54,25 @@ text-transform()
     background rgba(0, 20, 49, 0.8)
     backdrop-filter blur(3.5px)
   +element(curtain-inner)
-    height 80px
+    min-height 80px
+    display flex
+    flex-direction column
+    justify-content center
+    align-items center
+    +mq(0, 767px)
+      min-height 140px
+      align-items flex-start
+      padding 20px 0
+  +element(curtain-holder)
+    width 100%
     display flex
     justify-content space-between
     align-items center
+    +modifier(mob)
+      display none
+      margin-top 10px
+      +mq(0, 767px)
+        display flex
   +element(curtain-item)
     display flex
     justify-content space-between
@@ -65,6 +81,8 @@ text-transform()
       cursor pointer
     +modifier(logo)
       margin-left 67px
+      +mq(0, 767px)
+        margin-left 0
     +modifier(tel)
       margin-left auto
   +element(curtain-text)
@@ -85,6 +103,8 @@ text-transform()
       font-size 18px
       font-weight 800
       white-space nowrap
+      +mq(0, 767px)
+        font-size 15px
 
 .hero
   position relative
@@ -96,21 +116,35 @@ text-transform()
     min-height 639px
     display flex
     align-items center
-    padding-top 120px
+    padding 150px 0 30px
     margin-left 60px
+    +mq(0, 1365px)
+      justify-content center
+      margin-left 0
     +mq(0, 767px)
+      min-height 500px
       flex-direction column
       align-items center
+      padding-top 203px
   +element(desc-item)
     display flex
     justify-content space-between
     align-items center
     margin-top 38px
+    +mq(0, 767px)
+      flex-direction column
+      align-items center
+      gap 13px
+      margin-top 13px
   +element(desc)
     font-weight 300
     font-size 24px
     letter-spacing -0.05em
     color #fff
+    +mq(0, 1365px)
+      font-size 18px
+    +mq(0, 767px)
+      font-size 15px
   +element(img-holder)
     height 165px
     width 165px
@@ -122,9 +156,14 @@ text-transform()
     justify-content center
     align-items center
     flex-shrink 0
+    +mq(0, 1365px)
+      height 125px
+      width 125px
     +mq(0, 767px)
       height 90px
       width 90px
+      margin-bottom 26px
+      margin-right 0
   +element(img)
     max-width 100%
   +element(slide-1)
@@ -135,11 +174,28 @@ text-transform()
     font-size 72px
     color #fff
     text-transform()
+    +mq(0, 1365px)
+      font-size 58px
+      line-height 1.2
+    +mq(0, 767px)
+      font-size 35px
+      text-align center
     span
       display block
       font-size 48px
       color #fff
       text-transform()
+      +mq(0, 1365px)
+        font-size 38px
+      +mq(0, 767px)
+        font-size 28px
+  +element(menu)
+    +mq(0, 767px)
+      display none
+    +modifier(mob)
+      display none
+      +mq(0, 767px)
+        display block
   +element(second)
     max-width 950px
     font-weight 800

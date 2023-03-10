@@ -112,6 +112,9 @@ text-transform()
     outline none
     cursor pointer
     padding 0 15px
+    +mq(0, 767px)
+      width 363px
+      max-width 100%
   +element(publish-text)
     font-weight 800
     text-transform()
@@ -128,12 +131,20 @@ text-transform()
     background #FF0000
     border-radius 7px
     cursor pointer
+    +mq(0, 767px)
+      width 363px
+      max-width 100%
     +modifier(large)
       width 196px
+      +mq(0, 767px)
+        width 363px
+        max-width 100%
     +modifier(inner)
       position absolute
       left 12px
       bottom -20px
+      +mq(0, 767px)
+        width 116px
   +element(del-wrapper)
     margin-top 18px
   +element(del-text)
@@ -152,7 +163,8 @@ text-transform()
     justify-content center
     margin-top 10px
   +element(footer)
-    min-width 381px
+    width 381px
+    max-width 100%
     height 40px
     line-height 40px
     display flex
@@ -164,6 +176,7 @@ text-transform()
     outline none
     cursor pointer
     padding 0 15px
+      
   +element(footer-text)
     font-weight 800
     font-size 14px
@@ -185,3 +198,11 @@ text-transform()
     display flex
     align-items center
     gap 8px
+  +element(reset-wrap)
+    display flex
+    align-items center
+    gap 8px
+    +mq(0, 767px)
+      flex-direction column
+      align-items flex-start
+      gap 1px

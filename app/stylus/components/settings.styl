@@ -3,6 +3,11 @@
   display flex
   gap 28px
   margin-bottom 10px
+  +mq(0, 767px)
+    flex-direction column
+    gap 10px
+  +modifier(gap)
+    gap 28px
   &:last-child
     margin-bottom 0
   +element(wrapper)
@@ -10,10 +15,17 @@
     top 20px
     left 26px
     right 26px
+    +mq(0, 767px)
+      left 0
+      right 0
     +modifier(head)
       top 59px
+      +mq(0, 767px)
+        top 104px
     +modifier(hero)
       top 135px
+      +mq(0, 767px)
+        top 433px
   +element(item)
     position relative
     min-width 326px
@@ -24,6 +36,8 @@
       flex-grow 1
     +modifier(no-title)
       padding-top 26px
+      +mq(0, 767px)
+        padding-top 0
     +modifier(footer)
       flex-grow 1
     +modifier(normal)
@@ -34,6 +48,13 @@
     gap 11px
     +modifier(indent)
       margin-top auto
+    +modifier(column)
+      +mq(0, 767px)
+        flex-direction column
+        align-items flex-start
+    +modifier(bot-indent)
+      +mq(0, 1365px)
+        margin-bottom 25px
   +element(title)
     display block
     font-weight 500
@@ -49,8 +70,12 @@
     width 186px
     display flex
     flex-direction column
+    +mq(0, 767px)
+      width 100%
     +modifier(small)
       width 130px
+      +mq(0, 767px)
+        width 100%
     +modifier(large)
       flex-grow 1
   +element(input)
@@ -96,12 +121,16 @@
     line-height 1
     letter-spacing -0.05em
     color #000000
-    padding 12px
+    padding 12px 12px 25px
     resize none
     +modifier(high)
       min-height 270px
+      +mq(0, 767px)
+        min-height 190px
     +modifier(footer)
       min-height 254px
+      +mq(0, 767px)
+        min-height 190px
     &:focus
       border 1px solid #797979
   +element(item-del)

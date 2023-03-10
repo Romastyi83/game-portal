@@ -11,6 +11,9 @@
   +element(footer)
     top auto
     bottom -40px
+  +element(contacts)
+    top auto
+    bottom -40px
   +element(head)
     height 39px
     display flex
@@ -32,12 +35,21 @@
     text-transform()
     margin-left 10px
   +element(body)
+    max-height calc(100vh - 41px)
+    overflow-y auto
     background-color #fff
+    +modifier(head)
+      max-height calc(100vh - 145px)
   +element(body-inner)
     display flex
     justify-content space-between
     gap 28px
     padding 40px 42px 33px
+    +mq(0, 1365px)
+      flex-direction column
+      padding 20px
+    +mq(0, 767px)
+      padding 20px 15px
   +element(item)
     display flex
     flex-direction column
@@ -46,17 +58,27 @@
     +modifier(right-side)
       width 539px
       flex-grow 0
+      +mq(0, 767px)
+        width auto
     +modifier(group-footer)
       width 66.66%
+      +mq(0, 767px)
+        width auto
     +modifier(footer)
       width 33.33%
+      +mq(0, 767px)
+        width auto
     +modifier(no-title)
       padding-top 40px
+      +mq(0, 767px)
+        padding-top 0
   +element(item-inner)
     & + &
       padding-top 12px
   +element(item-inner-indent)
     padding-top 45px
+    +mq(0, 767px)
+      padding-top 25px
   +element(title)
     font-weight 800
     font-size 18px
@@ -85,10 +107,18 @@
       background-image url(../img/svg/popup-bottom.svg)
       background-position center left
       background-repeat repeat-x
+    +mq(0, 767px)
+      flex-direction column
+      padding 20px 16px
+      gap 10px
     +modifier(right)
       justify-content flex-end
   +element(bottom-side)
+    max-width 100%
     display flex
     justify-content center
     align-items center
     gap 10px
+    +mq(0, 767px)
+      flex-direction column
+      gap 10px

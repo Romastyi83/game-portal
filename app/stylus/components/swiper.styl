@@ -33,8 +33,14 @@
   flex-direction column
   gap 6px
 .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal
+  width 23px
   bottom 48px
   left calc(50% - 588px)
+  +mq(0, 1365px)
+    left calc(50% - 365px)
+  +mq(0, 767px)
+    bottom calc(50% - 36px)
+    left 14px
 .swiper-pagination-bullet
   width 15px
   height 15px
