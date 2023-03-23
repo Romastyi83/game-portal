@@ -1,0 +1,2250 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portal</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="js/main.min.js" defer></script>
+</head>
+
+<body>
+    <div class="wrapper">
+
+  <header class="header">
+    <div class="popup" data-settings-control-center>
+  <div class="popup__head">
+    <div class="popup__head-item">
+      <i>
+        <img src="img/svg/popup-dots.svg" alt="dots">
+      </i>
+      <span class="popup__head-text">Центр управления сайтом</span>
+    </div>
+    <div class="popup__close" data-close-control-center>
+      <i>
+        <img src="img/svg/close.svg" alt="close">
+      </i>
+    </div>
+  </div>
+  <div class="popup__body">
+    <div class="popup__body-inner">
+      <div class="popup__item">
+        <div class="popup__item-inner">
+          <h3 class="popup__title">основные настройки</h3>
+          <div class="settings">
+            <div class="settings__item settings__item--large">
+              <div class="settings__row">
+                <div class="settings__label settings__label--large">
+                  <span class="settings__title">Название сайта</span>
+                  <input class="settings__input" type="text" value="Название компании">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="settings">
+            <div class="settings__item">
+              <span class="settings__title settings__title--item">Логотип компании (мин. 512x512 пикселей)</span>
+              <div class="settings__row">
+                <div class="settings__label settings__label--large">
+
+                  <div class="settings__input-wrapper">
+                    <div class="btn__review">обзор...</div>
+                    <input class="settings__input" type="text" value="">
+                  </div>
+                </div>
+                <div class="btn__dots-wrapper">
+                  <div class="btn__dots-inner">
+                    <i>
+                      <img src="img/svg/btn-dots.svg" alt="dots">
+                    </i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="settings__item settings__item--no-title">
+              <div class="settings__row">
+                <div class="settings__label settings__label--large">
+                  <span class="settings__title">Скрыть сайт (режим редактора)</span>
+                </div>
+                <div class="btn__dots-wrapper">
+                  <div class="btn__dots-inner">
+                    <i>
+                      <img src="img/svg/btn-dots.svg" alt="dots">
+                    </i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popup__item-inner-indent">
+          <h3 class="popup__title">Настройки блоков</h3>
+          <div class="settings">
+            <div class="settings__item">
+              <div class="settings__row">
+                <div class="settings__label settings__label--large">
+                  <span class="settings__title">Слайдер</span>
+                </div>
+                <div class="btn__dots-wrapper">
+                  <div class="btn__dots-inner">
+                    <i>
+                      <img src="img/svg/btn-dots.svg" alt="dots">
+                    </i>
+                  </div>
+                </div>
+              </div>
+              <div class="settings__row">
+                <div class="settings__label settings__label--large">
+                  <span class="settings__title">Витрина продукции</span>
+                </div>
+                <div class="btn__dots-wrapper">
+                  <div class="btn__dots-inner">
+                    <i>
+                      <img src="img/svg/btn-dots.svg" alt="dots">
+                    </i>
+                  </div>
+                </div>
+              </div>
+              <div class="settings__row">
+                <div class="settings__label settings__label--large">
+                  <span class="settings__title">Основной информационный блок</span>
+                </div>
+                <div class="btn__dots-wrapper">
+                  <div class="btn__dots-inner">
+                    <i>
+                      <img src="img/svg/btn-dots.svg" alt="dots">
+                    </i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="settings__item">
+              <div class="settings__row">
+                <div class="settings__label settings__label--large">
+                  <span class="settings__title">Новостной блок</span>
+                </div>
+                <div class="btn__dots-wrapper">
+                  <div class="btn__dots-inner">
+                    <i>
+                      <img src="img/svg/btn-dots.svg" alt="dots">
+                    </i>
+                  </div>
+                </div>
+              </div>
+              <div class="settings__row">
+                <div class="settings__label settings__label--large">
+                  <span class="settings__title">Отзывы клиентов</span>
+                </div>
+                <div class="btn__dots-wrapper">
+                  <div class="btn__dots-inner">
+                    <i>
+                      <img src="img/svg/btn-dots.svg" alt="dots">
+                    </i>
+                  </div>
+                </div>
+              </div>
+              <div class="settings__row">
+                <div class="settings__label settings__label--large">
+                  <span class="settings__title">Контактная информация</span>
+                </div>
+                <div class="btn__dots-wrapper">
+                  <div class="btn__dots-inner">
+                    <i>
+                      <img src="img/svg/btn-dots.svg" alt="dots">
+                    </i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup__item popup__item--right-side">
+        <div class="popup__item-inner">
+          <h3 class="popup__title">Настройки аккаунта</h3>
+          <div class="settings">
+
+            <div class="settings__item settings__item--large">
+              <div class="settings__row settings__row--column">
+                <div class="settings__label settings__label--large">
+                  <span class="settings__title">Логин</span>
+                  <input class="settings__input" type="text" value="username">
+                </div>
+                <div class="settings__label settings__label--large">
+                  <span class="settings__title">Пароль</span>
+                  <input class="settings__input" type="text" value="0000000">
+                </div>
+                <div class="settings__label settings__label--large">
+                  <span class="settings__title">Повтор пароля</span>
+                  <input class="settings__input" type="text" value="0000000">
+                </div>
+              </div>
+              <div class="settings__row">
+                <div class="settings__star-text-wrapper">
+                  <p class="settings__warning-text">
+                    <span>Обратите внимание!</span>
+
+                    Данный логин и пароль устанавливается только для редактирования сайта и не дает доступ (не связан) к
+                    личному кабинету. Вы можете передать его редактору или другим лицам, работающим над сайтом, а так же
+                    сбросить в личном кабинете.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popup__item-inner">
+          <div class="settings">
+
+            <div class="settings__item settings__item--large">
+              <div class="settings__row">
+                <div class="btn__reset">
+                  <div class="btn__reset-inner">
+                    <i>
+                      <img src="img/svg/del.svg" alt="delete">
+                    </i>
+                    <div class="btn__reset-wrap">
+                      <span class="btn__del-text">Сбросить сайт до пустого шаблона</span>
+                      <span class="btn__reset-text">Наполнение сайта будет удалено</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="popup__bottom popup__bottom--right">
+      <button class="btn__publish">
+        <span class="btn__publish-text">Сохранить изменения</span>
+      </button>
+    </div>
+  </div>
+</div>
+    <div class="settings__wrapper settings__wrapper--head">
+  <div class="pencil" data-pencil>
+    <img src="img/svg/pencil.svg" alt="pencil">
+  </div>
+  <div class="popup" data-popup>
+    <div class="popup__head">
+      <div class="popup__head-item">
+        <i>
+          <img src="img/svg/popup-dots.svg" alt="dots">
+        </i>
+        <span class="popup__head-text">шапка</span>
+      </div>
+      <div class="popup__close" data-close>
+        <i>
+          <img src="img/svg/close.svg" alt="close">
+        </i>
+      </div>
+    </div>
+    <div class="popup__body popup__body--head">
+      <div class="popup__body-inner">
+        <div class="popup__item">
+          <div class="popup__item-inner">
+            <h3 class="popup__title">Шапка сайта</h3>
+            <div class="settings">
+              <div class="settings__item">
+                <div class="settings__row">
+                  <div class="settings__label">
+                    <span class="settings__title">Название сайта</span>
+                    <input class="settings__input" type="text" value="Название компании">
+                  </div>
+                  <div class="settings__label settings__label--small">
+                    <span class="settings__title">Цвет</span>
+                    <div class="settings__input-wrapper">
+                      <img class="settings__img" src="img/svg/color.svg" alt="color">
+                      <input class="settings__input settings__input--color" type="text" value="#FFFFFF">
+                    </div>
+                  </div>
+                </div>
+                <div class="settings__row">
+                  <div class="settings__label">
+                    <span class="settings__title">Основной телефон</span>
+                    <input class="settings__input" type="text" value="8 800 555 35 35">
+                  </div>
+                  <div class="settings__label settings__label--small">
+                    <span class="settings__title">Цвет</span>
+                    <div class="settings__input-wrapper">
+                      <img class="settings__img" src="img/svg/color.svg" alt="color">
+                      <input class="settings__input settings__input--color" type="text" value="#FFFFFF">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="settings__item">
+                <div class="settings__row">
+                  <div class="settings__label settings__label--large">
+                    <span class="settings__title">Кнопка заказа звонка</span>
+                    <input class="settings__input" type="text" value="Заказать звонок">
+                  </div>
+                  <div class="btn__dots-wrapper">
+                    <div class="btn__dots-inner">
+                      <i>
+                        <img src="img/svg/btn-dots.svg" alt="close">
+                      </i>
+                    </div>
+                  </div>
+                </div>
+                <div class="settings__row">
+                  <div class="settings__label settings__label--large">
+                    <span class="settings__title">Логотип в шапке</span>
+                    <div class="settings__input-wrapper">
+                      <div class="btn__review">обзор...</div>
+                      <input class="settings__input" type="text" value="image.png">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popup__item popup__item--right-side">
+          <div class="popup__item-inner">
+            <h3 class="popup__title">настройки блока</h3>
+            <div class="settings">
+              <div class="settings__item settings__item--large">
+                <div class="settings__row">
+                  <div class="settings__label settings__label--large">
+                    <span class="settings__title">Меню в шапке</span>
+                    <input class="settings__input" type="text" value="Содержание">
+                  </div>
+                  <div class="btn__dots-wrapper">
+                    <div class="btn__dots-inner">
+                      <i>
+                        <img src="img/svg/btn-dots.svg" alt="close">
+                      </i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="popup__bottom popup__bottom--right">
+        <button class="btn__publish">
+          <span class="btn__publish-text">Опубликовать</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="header__inner">
+
+      <div class="header__item">
+        <i data-control-center>
+          <img src="img/svg/control-center.svg" alt="control-center">
+        </i>
+
+        <span class="header__item-text">Центр управления сайтом</span>
+      </div>
+      <div class="header__item">
+        <i>
+          <img src="img/svg/lk.svg" alt="lk">
+        </i>
+        <span class="header__item-text">в личный кабинет</span>
+      </div>
+    </div>
+    <div class="header__curtain">
+
+      <div class="container">
+        <div class="header__curtain-inner">
+          <div class="header__curtain-holder">
+            <div class="header__curtain-item header__curtain-item--content">
+              <i>
+                <img src="img/svg/content.svg" alt="content">
+              </i>
+              <span class="header__curtain-text header__curtain-text--content title__menu">Содержание</span>
+              <span class="header__curtain-text header__curtain-text--content title__menu--mob">Меню</span>
+            </div>
+            <div class="header__curtain-item header__curtain-item--logo title__menu">
+              <i>
+                <img src="img/logo.png" alt="logo">
+              </i>
+              <span class="header__curtain-text header__curtain-text--logo">Название компании</span>
+            </div>
+            <div class="header__curtain-item header__curtain-item--tel">
+              <span class="header__curtain-text header__curtain-text--tel">8 800 555 35 35</span>
+              <a class="btn btn__tel title__menu" href="#">заказать звонок</a>
+            </div>
+          </div>
+          <div class="header__curtain-holder header__curtain-holder--mob">
+            <div class="header__curtain-item header__curtain-item--logo">
+              <i>
+                <img src="img/logo-mob.png" alt="logo">
+              </i>
+              <span class="header__curtain-text header__curtain-text--logo">Название компании</span>
+            </div>
+            <a class="btn btn__tel" href="#">заказать звонок</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="settings__wrapper settings__wrapper--hero">
+  <div class="pencil" data-pencil>
+    <img src="img/svg/pencil.svg" alt="pencil">
+  </div>
+  <div class="popup" data-popup>
+    <div class="popup__head">
+      <div class="popup__head-item">
+        <i>
+          <img src="img/svg/popup-dots.svg" alt="dots">
+        </i>
+        <span class="popup__head-text">слайдер</span>
+      </div>
+      <div class="popup__close" data-close>
+        <i>
+          <img src="img/svg/close.svg" alt="close">
+        </i>
+      </div>
+    </div>
+    <div class="popup__body">
+      <div class="popup__body-inner">
+        <div class="popup__item">
+          <div class="popup__item-inner">
+            <h3 class="popup__title">слайдер</h3>
+            <div class="settings">
+              <div class="settings__item">
+                <div class="settings__row">
+                  <div class="settings__label">
+                    <span class="settings__title">Первый заголовок</span>
+                    <input class="settings__input" type="text" value="Название компании">
+                  </div>
+                  <div class="settings__label settings__label--small">
+                    <span class="settings__title">Цвет</span>
+                    <div class="settings__input-wrapper">
+                      <img class="settings__img" src="img/svg/color.svg" alt="color">
+                      <input class="settings__input settings__input--icon" type="text" value="#FFFFFF">
+                    </div>
+                  </div>
+                </div>
+                <div class="settings__row">
+                  <div class="settings__label">
+                    <span class="settings__title">Второй заголовок</span>
+                    <input class="settings__input" type="text" value="для pro геймеров">
+                  </div>
+                  <div class="settings__label settings__label--small">
+                    <span class="settings__title">Цвет</span>
+                    <div class="settings__input-wrapper">
+                      <img class="settings__img" src="img/svg/color.svg" alt="color">
+                      <input class="settings__input settings__input--icon" type="text" value="#FFFFFF">
+                    </div>
+                  </div>
+                </div>
+                <div class="settings__row">
+                  <div class="settings__label">
+                    <span class="settings__title">Описание</span>
+                    <input class="settings__input" type="text" value="Всегда в наличии и под заказ!">
+                  </div>
+                  <div class="settings__label settings__label--small">
+                    <span class="settings__title">Цвет</span>
+                    <div class="settings__input-wrapper">
+                      <img class="settings__img" src="img/svg/color.svg" alt="color">
+                      <input class="settings__input settings__input--icon" type="text" value="#FFFFFF">
+                    </div>
+                  </div>
+                </div>
+                <div class="settings__row">
+                  <div class="settings__label settings__label--large">
+                    <span class="settings__title">Кнопка действия</span>
+                    <input class="settings__input" type="text" value="Купить сейчас">
+                  </div>
+                  <div class="btn__dots-wrapper">
+                    <div class="btn__dots-inner">
+                      <i>
+                        <img src="img/svg/btn-dots.svg" alt="close">
+                      </i>
+                    </div>
+                  </div>
+                </div>
+                <div class="settings__row">
+                  <div class="settings__label settings__label--large">
+                    <input class="settings__input" type="text" value="https://">
+                  </div>
+                </div>
+                <div class="settings__row">
+                  <div class="settings__label settings__label--large">
+                    <span class="settings__title">Картинка на слайде</span>
+                    <div class="settings__input-wrapper">
+                      <div class="btn__review">обзор...</div>
+                      <input class="settings__input" type="text" value="image.png">
+                    </div>
+                  </div>
+                </div>
+                <div class="settings__row">
+                  <div class="settings__label settings__label--large">
+                    <span class="settings__title">Картинка-фон слайда (1920х640 пикселей)</span>
+                    <div class="settings__input-wrapper">
+                      <div class="btn__review">обзор...</div>
+                      <input class="settings__input" type="text" value="image.png">
+                    </div>
+                  </div>
+                </div>
+                <div class="btn__del-wrapper">
+                  <div class="btn__del">
+                    <i>
+                      <img src="img/svg/del.svg" alt="delete">
+                    </i>
+                    <span class="btn__del-text">удалить</span>
+                  </div>
+                </div>
+              </div>
+              <div class="settings__item">
+                <div class="settings__row">
+                  <div class="settings__label">
+                    <span class="settings__title">Первый заголовок</span>
+                    <input class="settings__input" type="text" value="">
+                  </div>
+                  <div class="settings__label settings__label--small">
+                    <span class="settings__title">Цвет</span>
+                    <div class="settings__input-wrapper">
+                      <img class="settings__img" src="img/svg/color.svg" alt="color">
+                      <input class="settings__input settings__input--icon" type="text" value="#FFFFFF">
+                    </div>
+                  </div>
+                </div>
+                <div class="settings__row">
+                  <div class="settings__label">
+                    <span class="settings__title">Второй заголовок</span>
+                    <input class="settings__input" type="text" value="">
+                  </div>
+                  <div class="settings__label settings__label--small">
+                    <span class="settings__title">Цвет</span>
+                    <div class="settings__input-wrapper">
+                      <img class="settings__img" src="img/svg/color.svg" alt="color">
+                      <input class="settings__input settings__input--icon" type="text" value="#FFFFFF">
+                    </div>
+                  </div>
+                </div>
+                <div class="settings__row">
+                  <div class="settings__label">
+                    <span class="settings__title">Описание</span>
+                    <input class="settings__input" type="text" value="">
+                  </div>
+                  <div class="settings__label settings__label--small">
+                    <span class="settings__title">Цвет</span>
+                    <div class="settings__input-wrapper">
+                      <img class="settings__img" src="img/svg/color.svg" alt="color">
+                      <input class="settings__input settings__input--icon" type="text" value="#FFFFFF">
+                    </div>
+                  </div>
+                </div>
+                <div class="settings__row">
+                  <div class="settings__label settings__label--large">
+                    <span class="settings__title">Кнопка действия</span>
+                    <input class="settings__input" type="text" value="">
+                  </div>
+                  <div class="btn__dots-wrapper">
+                    <div class="btn__dots-inner">
+                      <i>
+                        <img src="img/svg/btn-dots.svg" alt="dots">
+                      </i>
+                    </div>
+                  </div>
+                </div>
+                <div class="settings__row">
+                  <div class="settings__label settings__label--large">
+                    <input class="settings__input" type="text" value="https://">
+                  </div>
+                </div>
+                <div class="settings__row">
+                  <div class="settings__label settings__label--large">
+                    <span class="settings__title">Картинка на слайде</span>
+                    <div class="settings__input-wrapper">
+                      <div class="btn__review">обзор...</div>
+                      <input class="settings__input" type="text" value="">
+                    </div>
+                  </div>
+                </div>
+                <div class="settings__row">
+                  <div class="settings__label settings__label--large">
+                    <span class="settings__title">Картинка-фон слайда (1920х640 пикселей)</span>
+                    <div class="settings__input-wrapper">
+                      <div class="btn__review">обзор...</div>
+                      <input class="settings__input" type="text" value="">
+                    </div>
+                  </div>
+                </div>
+                <div class="btn__del-wrapper">
+                  <div class="btn__del">
+                    <i>
+                      <img src="img/svg/del.svg" alt="delete">
+                    </i>
+                    <span class="btn__del-text">удалить</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popup__item">
+          <div class="popup__item-inner">
+            <h3 class="popup__title">настройки блока</h3>
+            <div class="settings">
+
+              <div class="settings__item settings__item--large">
+                <div class="settings__row">
+                  <div>
+                    <span class="settings__title">Слайдов</span>
+                    <div class="popup__pm-slider">
+
+                      <div class="popup__slider-arrow">
+                        <i>
+                          <img src="img/svg/minus-slider.svg" alt="minus">
+                        </i>
+                      </div>
+
+                      <div class="popup__slider-number-holder">
+                        <div class="popup__slider-number">4</div>
+                      </div>
+
+                      <div class="popup__slider-arrow">
+                        <i>
+                          <img src="img/svg/plus-slider.svg" alt="plus">
+                        </i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="settings__row">
+                  <div class="settings__label settings__label--large">
+                    <span class="settings__title">Анимация пролистывания</span>
+                    <div class="settings__input-wrapper">
+                      <img class="settings__img" src="img/svg/arrow-down.svg" alt="arrow">
+                      <input class="settings__input settings__input--icon" type="text" value="Появление слева">
+                    </div>
+                  </div>
+                  <div class="btn__dots-wrapper">
+                    <div class="btn__dots-inner">
+                      <i>
+                        <img src="img/svg/btn-dots.svg" alt="dots">
+                      </i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="popup__bottom">
+        <button class="btn__publish">
+          <i>
+            <img src="img/svg/plus.svg" alt="plus">
+          </i>
+          <span class="btn__publish-text">добавить слайд</span>
+        </button>
+        <div class="popup__slider">
+
+          <div class="popup__slider-arrow">
+            <i>
+              <img src="img/svg/arrow-left-b.svg" alt="arrow">
+            </i>
+          </div>
+
+          <div class="popup__slider-dots-holder">
+            <div class="popup__slider-dot active"></div>
+            <div class="popup__slider-dot"></div>
+            <div class="popup__slider-dot"></div>
+            <div class="popup__slider-dot"></div>
+          </div>
+
+          <div class="popup__slider-arrow">
+            <i>
+              <img src="img/svg/arrow-right-b.svg" alt="arrow">
+            </i>
+          </div>
+
+        </div>
+        <div class="popup__bottom-side">
+          <div class="btn__del btn__del--large">
+            <i>
+              <img src="img/svg/del.svg" alt="delete">
+            </i>
+            <span class="btn__del-text">удалить весь блок</span>
+          </div>
+          <button class="btn__publish">
+            <span class="btn__publish-text">Опубликовать</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="top-swiper">
+      <div class="swiper-pagination"></div>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="hero">
+            <div class="container">
+              <div class="hero__inner">
+                <div class="hero__img-holder">
+                  <img class="hero__img" src="img/hero-img.png" alt="img">
+                </div>
+                <div class="hero__main">
+                  <h1 class="title__main"><span>крутые сборки</span> для pro геймеров</h1>
+                  <div class="hero__desc-item">
+                    <span class="hero__desc">Всегда в наличии и под заказ!</span>
+                    <a class="btn btn__main" href="#">купить сейчас</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="hero hero__slide-1">
+
+            <div class="container">
+              <div class="hero__inner">
+                <div class="hero__img-holder">
+                  <img class="hero__img" src="img/headphone.jpg" alt="img">
+                </div>
+                <div class="hero__main">
+                  <h1 class="title__main"><span>крутые сборки</span> для pro геймеров</h1>
+                  <div class="hero__desc-item">
+                    <span class="hero__desc">Всегда в наличии и под заказ!</span>
+                    <a class="btn btn__main" href="#">купить сейчас</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="section">
+  <div class="settings__wrapper">
+  <div class="pencil" data-pencil>
+    <img src="img/svg/pencil.svg" alt="pencil">
+  </div>
+  <div class="popup" data-popup>
+    <div class="popup__head">
+      <div class="popup__head-item">
+        <i>
+          <img src="img/svg/popup-dots.svg" alt="dots">
+        </i>
+        <span class="popup__head-text">витрина</span>
+      </div>
+      <div class="popup__close" data-close>
+        <i>
+          <img src="img/svg/close.svg" alt="close">
+        </i>
+      </div>
+    </div>
+    <div class="popup__body">
+      <div class="popup__body-inner">
+        <div class="popup__item">
+          <h3 class="popup__title">витрина товаров</h3>
+          <div class="settings">
+            <div class="settings__item">
+              <div class="settings__row">
+                <div class="settings__label settings__label--large">
+                  <span class="settings__title">Название позиции</span>
+                  <input class="settings__input" type="text" value="MSI GeForce 2080 Super 6GB">
+                </div>
+              </div>
+              <div class="settings__row">
+                <div class="settings__label settings__label--large">
+                  <span class="settings__title">Цена</span>
+                  <input class="settings__input" type="text" value="238 500 ₽">
+                </div>
+              </div>
+              <div class="settings__row">
+                <div class="settings__label settings__label--large">
+                  <span class="settings__title">Старая цена (зачеркнута)</span>
+                  <input class="settings__input" type="text" value="248 500 ₽">
+                </div>
+              </div>
+              <div class="settings__row">
+                <div class="settings__label settings__label--large">
+                  <span class="settings__title">Картинка</span>
+                  <div class="settings__input-wrapper">
+                    <div class="btn__review">обзор...</div>
+                    <input class="settings__input" type="text" value="image.png">
+                  </div>
+                </div>
+              </div>
+              <div class="btn__del-wrapper">
+                <div class="btn__del">
+                  <i>
+                    <img src="img/svg/del.svg" alt="delete">
+                  </i>
+                  <span class="btn__del-text">удалить</span>
+                </div>
+              </div>
+            </div>
+            <div class="settings__item">
+              <div class="settings__row">
+                <div class="settings__label settings__label--large">
+                  <span class="settings__title">Название позиции</span>
+                  <input class="settings__input" type="text" value="AMD Ryzen 7 3700X">
+                </div>
+              </div>
+              <div class="settings__row">
+                <div class="settings__label settings__label--large">
+                  <span class="settings__title">Цена</span>
+                  <input class="settings__input" type="text" value="28 500 ₽">
+                </div>
+              </div>
+              <div class="settings__row">
+                <div class="settings__label settings__label--large">
+                  <span class="settings__title">Старая цена (зачеркнута)</span>
+                  <input class="settings__input" type="text" value="30 000 ₽">
+                </div>
+              </div>
+              <div class="settings__row">
+                <div class="settings__label settings__label--large">
+                  <span class="settings__title">Картинка</span>
+                  <div class="settings__input-wrapper">
+                    <div class="btn__review">обзор...</div>
+                    <input class="settings__input" type="text" value="image.png">
+                  </div>
+                </div>
+              </div>
+              <div class="btn__del-wrapper">
+                <div class="btn__del">
+                  <i>
+                    <img src="img/svg/del.svg" alt="delete">
+                  </i>
+                  <span class="btn__del-text">удалить</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popup__item popup__item--right-side">
+          <div class="popup__item-inner">
+            <h3 class="popup__title">настройки блока</h3>
+
+            <div class="settings">
+
+              <div class="settings__item settings__item--large">
+                <div class="settings__row">
+                  <div>
+                    <span class="settings__title">Товаров в блоке</span>
+                    <div class="popup__pm-slider">
+
+                      <div class="popup__slider-arrow">
+                        <i>
+                          <img src="img/svg/minus-slider.svg" alt="minus">
+                        </i>
+                      </div>
+
+                      <div class="popup__slider-number-holder">
+                        <div class="popup__slider-number">4</div>
+                      </div>
+
+                      <div class="popup__slider-arrow">
+                        <i>
+                          <img src="img/svg/plus-slider.svg" alt="plus">
+                        </i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="settings__row">
+                  <div class="settings__label settings__label--large">
+                    <span class="settings__title">Заголовок блока</span>
+                    <input class="settings__input" type="text"
+                      value="Новые игровые видео карты всегда в наличии и под заказ вплоть до RTX 3090">
+                  </div>
+                  <div class="btn__dots-wrapper">
+                    <div class="btn__dots-inner">
+                      <i>
+                        <img src="img/svg/btn-dots.svg" alt="dots">
+                      </i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+
+          </div>
+          <div class="popup__item-inner">
+            <div class="settings">
+              <div class="settings__item settings__item--large">
+                <div class="settings__row settings__row--column">
+                  <div class="settings__label settings__label--large">
+                    <span class="settings__title">Фоновая картинка блока</span>
+                    <div class="settings__input-wrapper">
+                      <div class="btn__review">обзор...</div>
+                      <input class="settings__input" type="text" value="">
+                    </div>
+                  </div>
+                  <div class="settings__label settings__label--small">
+                    <span class="settings__title">Фон блока</span>
+                    <div class="settings__input-wrapper">
+                      <img class="settings__img" src="img/svg/color.svg" alt="color">
+                      <input class="settings__input settings__input--icon" type="text" value="#FFFFFF">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="popup__bottom">
+        <button class="btn__publish">
+          <i>
+            <img src="img/svg/plus.svg" alt="plus">
+          </i>
+          <span class="btn__publish-text">добавить товар</span>
+        </button>
+        <div class="popup__slider">
+
+          <div class="popup__slider-arrow">
+            <i>
+              <img src="img/svg/arrow-left-b.svg" alt="arrow">
+            </i>
+          </div>
+
+          <div class="popup__slider-dots-holder">
+            <div class="popup__slider-dot active"></div>
+            <div class="popup__slider-dot"></div>
+            <div class="popup__slider-dot"></div>
+            <div class="popup__slider-dot"></div>
+          </div>
+
+          <div class="popup__slider-arrow">
+            <i>
+              <img src="img/svg/arrow-right-b.svg" alt="arrow">
+            </i>
+          </div>
+
+        </div>
+        <div class="popup__bottom-side">
+          <div class="btn__del btn__del--large">
+            <i>
+              <img src="img/svg/del.svg" alt="delete">
+            </i>
+            <span class="btn__del-text">удалить весь блок</span>
+          </div>
+          <button class="btn__publish">
+            <span class="btn__publish-text">Опубликовать</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="container">
+    <h2 class="title__second title__second--gr">Новые игровые видео карты всегда
+      в наличии и под заказ вплоть до RTX 3090
+    </h2>
+    <div class="products">
+      <div class="product">
+        <img src="img/video-card.png" alt="product">
+        <div class="product__desc">
+          <span class="product__name">MSI GeForce 2080 Super 6GB</span>
+          <span class="product__price">238 500 ₽
+            <span>248 000 ₽</span>
+          </span>
+        </div>
+      </div>
+      <div class="product">
+        <img src="img/ryzen3700X.png" alt="product">
+        <div class="product__desc">
+          <span class="product__name">AMD Ryzen 7 3700X</span>
+          <span class="product__price">28 500 ₽
+            <span>30 000 ₽</span>
+          </span>
+        </div>
+      </div>
+      <div class="product">
+        <img src="img/ryzen3700.png" alt="product">
+        <div class="product__desc">
+          <span class="product__name">AMD Ryzen 7 3700</span>
+          <span class="product__price">27 500 ₽
+            <span>29 000 ₽</span>
+          </span>
+        </div>
+      </div>
+      <div class="product">
+        <img src="img/pc.png" alt="product">
+        <div class="product__desc">
+          <span class="product__name">ТОП-сборка PC от ALIENWARE</span>
+          <span class="product__price">238 500 ₽
+            <span>248 000 ₽</span>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="products__more hidden" data-more-products>
+      <div class="products">
+        <div class="product">
+          <img src="img/video-card.png" alt="product">
+          <div class="product__desc">
+            <span class="product__name">MSI GeForce 2080 Super 6GB</span>
+            <span class="product__price">238 500 ₽
+              <span>248 000 ₽</span>
+            </span>
+          </div>
+        </div>
+        <div class="product">
+          <img src="img/ryzen3700X.png" alt="product">
+          <div class="product__desc">
+            <span class="product__name">AMD Ryzen 7 3700X</span>
+            <span class="product__price">28 500 ₽
+              <span>30 000 ₽</span>
+            </span>
+          </div>
+        </div>
+        <div class="product">
+          <img src="img/ryzen3700.png" alt="product">
+          <div class="product__desc">
+            <span class="product__name">AMD Ryzen 7 3700</span>
+            <span class="product__price">27 500 ₽
+              <span>29 000 ₽</span>
+            </span>
+          </div>
+        </div>
+        <div class="product">
+          <img src="img/pc.png" alt="product">
+          <div class="product__desc">
+            <span class="product__name">ТОП-сборка PC от ALIENWARE</span>
+            <span class="product__price">238 500 ₽
+              <span>248 000 ₽</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="products__sep">
+      <a href="#" class="btn btn__products-more" data-show-products>показать другие</a>
+    </div>
+  </div>
+</section>
+    <section class="section section__blue-bg">
+  <div class="settings__wrapper">
+  <div class="pencil" data-pencil>
+    <img src="img/svg/pencil.svg" alt="pencil">
+  </div>
+  <div class="popup" data-popup>
+    <div class="popup__head">
+      <div class="popup__head-item">
+        <i>
+          <img src="img/svg/popup-dots.svg" alt="dots">
+        </i>
+        <span class="popup__head-text">информация</span>
+      </div>
+      <div class="popup__close" data-close>
+        <i>
+          <img src="img/svg/close.svg" alt="close">
+        </i>
+      </div>
+    </div>
+    <div class="popup__body">
+      <div class="popup__body-inner">
+        <div class="popup__item">
+          <div class="popup__item-inner">
+            <h3 class="popup__title">информация о компании или продукте</h3>
+            <div class="settings">
+              <div class="settings__item">
+                <div class="settings__row">
+                  <div class="settings__label settings__label--large">
+                    <span class="settings__title">Заголовок блока</span>
+                    <input class="settings__input" type="text" value="Лидер среди лучших!">
+                  </div>
+                  <div class="btn__dots-wrapper">
+                    <div class="btn__dots-inner">
+                      <i>
+                        <img src="img/svg/btn-dots.svg" alt="close">
+                      </i>
+                    </div>
+                  </div>
+                </div>
+                <div class="settings__row">
+                  <div class="settings__label settings__label--large">
+                    <span class="settings__title">Главная картинка</span>
+                    <div class="settings__input-wrapper">
+                      <div class="btn__review">обзор...</div>
+                      <input class="settings__input" type="text" value="image.png">
+                    </div>
+                  </div>
+                  <div class="btn__dots-wrapper">
+                    <div class="btn__dots-inner btn__dots-inner--slider">
+                      <i>
+                        <img src="img/svg/btn-dots.svg" alt="btn">
+                      </i>
+                    </div>
+                  </div>
+                </div>
+                <div class="settings__row">
+                  <div class="settings__label settings__label--large">
+                    <span class="settings__title">Кнопка действия</span>
+                    <input class="settings__input" type="text" value="Купить сейчас">
+                  </div>
+                  <div class="btn__dots-wrapper">
+                    <div class="btn__dots-inner">
+                      <i>
+                        <img src="img/svg/btn-dots.svg" alt="close">
+                      </i>
+                    </div>
+                  </div>
+                </div>
+                <div class="settings__row">
+                  <div class="settings__label settings__label--large">
+                    <input class="settings__input" type="text" value="https://">
+                  </div>
+                </div>
+              </div>
+              <div class="settings__item">
+                <div class="settings__row">
+                  <div>
+                    <span class="settings__title">Картинок в блоке</span>
+                    <div class="popup__pm-slider">
+
+                      <div class="popup__slider-arrow">
+                        <i>
+                          <img src="img/svg/minus-slider.svg" alt="minus">
+                        </i>
+                      </div>
+
+                      <div class="popup__slider-number-holder">
+                        <div class="popup__slider-number">2</div>
+                      </div>
+
+                      <div class="popup__slider-arrow">
+                        <i>
+                          <img src="img/svg/plus-slider.svg" alt="plus">
+                        </i>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <span class="settings__title">Картинки</span>
+                    <div class="btn__dots-wrapper">
+
+                      <div class="btn__dots-inner">
+                        <i>
+                          <img src="img/svg/btn-dots.svg" alt="close">
+                        </i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="settings__row settings__row--indent">
+                  <div class="settings__label settings__label--large">
+                    <span class="settings__title">Дополнительная картинка</span>
+                    <div class="settings__input-wrapper">
+                      <div class="btn__review">обзор...</div>
+                      <input class="settings__input" type="text" value="image.png">
+                    </div>
+                  </div>
+                </div>
+                <div class="settings__row">
+                  <div class="settings__label settings__label--large">
+                    <span class="settings__title">Дополнительная картинка</span>
+                    <div class="settings__input-wrapper">
+                      <div class="btn__review">обзор...</div>
+                      <input class="settings__input" type="text" value="image.png">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popup__item popup__item--no-title popup__item--right-side">
+          <div class="popup__item-inner">
+            <div class="settings">
+
+              <div class="settings__item settings__item--large">
+                <span class="settings__title">Текст</span>
+                <div class="settings__row">
+                  <textarea class="settings__textarea">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tincidunt luctus tellus, eu venenatis metus bibendum eget. Mauris id purus orci. Ut vel lorem mollis, vestibulum massa gravida, pharetra dolor. Nulla dictum sem est. Cras rutrum lectus eu ex malesuada aliquet. 
+Mauris id eros ligula. Proin elit tellus, dictum id est quis, laoreet rutrum risus. 
+
+Nunc in laoreet elit, in interdum augue. Nullam ullamcorper est orci. Sed sem quam, faucibus ut dignissim vel, hendrerit facilisis mauris.</textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="popup__item-inner">
+            <div class="settings">
+              <div class="settings__item settings__item--large">
+                <div class="settings__row settings__row--column">
+                  <div class="settings__label settings__label--large">
+                    <span class="settings__title">Фоновая картинка блока</span>
+                    <div class="settings__input-wrapper">
+                      <div class="btn__review">обзор...</div>
+                      <input class="settings__input" type="text" value="">
+                    </div>
+                  </div>
+                  <div class="settings__label settings__label--small">
+                    <span class="settings__title">Фон блока</span>
+                    <div class="settings__input-wrapper">
+                      <img class="settings__img" src="img/svg/color.svg" alt="color">
+                      <input class="settings__input settings__input--icon" type="text" value="#FFFFFF">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="popup__bottom popup__bottom--right">
+        <div class="popup__bottom-side">
+          <div class="btn__del btn__del--large">
+            <i>
+              <img src="img/svg/del.svg" alt="delete">
+            </i>
+            <span class="btn__del-text">удалить весь блок</span>
+          </div>
+          <button class="btn__publish">
+            <span class="btn__publish-text">Опубликовать</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="container">
+    <div class="leader__inner">
+      <div class="leader__content">
+        <h2 class="title__second title__second--leader">
+          Лидер среди лучших!
+        </h2>
+        <div class="leader__img-wrap-mob">
+          <img class="leader__img" src="img/leader-img.png" alt="img">
+        </div>
+        <p class="leader__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tincidunt luctus
+          tellus, eu venenatis
+          metus bibendum eget. Mauris id purus orci. Ut vel lorem mollis, vestibulum massa gravida, pharetra dolor.
+          Nulla
+          dictum sem est. Cras rutrum lectus eu ex malesuada aliquet.<br>
+          Mauris id eros ligula. Proin elit tellus, dictum id est quis, laoreet rutrum risus.
+        </p>
+        <p class="leader__p">
+          Nunc in laoreet elit, in interdum augue. Nullam ullamcorper est orci. Sed sem quam, faucibus ut dignissim vel,
+          hendrerit facilisis mauris.
+        </p>
+        <a href="#" class="btn btn__large">купить сейчас</a>
+      </div>
+      <div class="leader__img-wrap">
+        <img class="leader__img" src="img/leader-img.png" alt="img">
+      </div>
+    </div>
+  </div>
+</section>
+    <div class="workplace">
+  <img class="img__keyboard" src="img/keyboard.png" alt="keyboard">
+  <img class="img__workplace" src="img/workplace.png" alt="workplace">
+</div>
+    <section class="section">
+  <div class="settings__wrapper">
+  <div class="pencil" data-pencil>
+    <img src="img/svg/pencil.svg" alt="pencil">
+  </div>
+  <div class="popup" data-popup>
+    <div class="popup__head">
+      <div class="popup__head-item">
+        <i>
+          <img src="img/svg/popup-dots.svg" alt="dots">
+        </i>
+        <span class="popup__head-text">новости</span>
+      </div>
+      <div class="popup__close" data-close>
+        <i>
+          <img src="img/svg/close.svg" alt="close">
+        </i>
+      </div>
+    </div>
+    <div class="popup__body">
+      <div class="popup__body-inner">
+        <div class="popup__item">
+          <h3 class="popup__title">новости компании</h3>
+          <div class="settings">
+            <div class="settings__item">
+              <div class="settings__row">
+                <div class="settings__label settings__label--large">
+                  <span class="settings__title">Дата</span>
+                  <div class="settings__input-wrapper settings__label--large">
+                    <img class="settings__img" src="img/svg/calendar.svg" alt="calendar">
+                    <input class="settings__input settings__input--icon" type="text" value="10 ноября 2021">
+                  </div>
+                </div>
+              </div>
+              <div class="settings__row">
+                <div class="settings__label settings__label--large">
+                  <span class="settings__title">Картинка</span>
+                  <div class="settings__input-wrapper">
+                    <div class="btn__review">обзор...</div>
+                    <input class="settings__input" type="text" value="news.png">
+                  </div>
+                </div>
+              </div>
+              <div class="settings__row">
+                <div class="settings__label settings__label--large">
+                  <span class="settings__title">Заголовок</span>
+                  <input class="settings__input" type="text" value="Новейшая сборка мощного PC">
+                </div>
+              </div>
+              <div class="settings__row settings__row--bot-indent">
+                <div class="settings__label settings__label--large">
+                  <span class="settings__title">Текст</span>
+                  <textarea class="settings__textarea settings__textarea--high">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tincidunt luctus tellus, eu venenatis metus bibendum eget. Mauris id purus orci. Ut vel lorem mollis, vestibulum massa gravida, pharetra dolor. Nulla dictum sem est. Cras rutrum lectus eu ex malesuada aliquet. 
+Mauris id eros ligula. Proin elit tellus, dictum id est quis, laoreet rutrum risus. 
+
+Nunc in laoreet elit, in interdum augue. Nullam ullamcorper est orci. Sed sem quam, faucibus ut dignissim vel, hendrerit facilisis mauris.</textarea>
+                  <div class="btn__del btn__del--inner">
+                    <i>
+                      <img src="img/svg/del.svg" alt="delete">
+                    </i>
+                    <span class="btn__del-text">удалить</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="settings__item">
+              <div class="settings__row">
+                <div class="settings__label settings__label--large">
+                  <span class="settings__title">Дата</span>
+                  <div class="settings__input-wrapper settings__label--large">
+                    <img class="settings__img" src="img/svg/calendar.svg" alt="calendar">
+                    <input class="settings__input settings__input--icon" type="text" value="9 октября 2021">
+                  </div>
+                </div>
+              </div>
+              <div class="settings__row">
+                <div class="settings__label settings__label--large">
+                  <span class="settings__title">Картинка</span>
+                  <div class="settings__input-wrapper">
+                    <div class="btn__review">обзор...</div>
+                    <input class="settings__input" type="text" value="news.png">
+                  </div>
+                </div>
+              </div>
+              <div class="settings__row">
+                <div class="settings__label settings__label--large">
+                  <span class="settings__title">Заголовок</span>
+                  <input class="settings__input" type="text" value="Снова в продаже водяное охладжение от Ther...">
+                </div>
+              </div>
+              <div class="settings__row settings__row--bot-indent">
+                <div class="settings__label settings__label--large">
+                  <span class="settings__title">Текст</span>
+                  <textarea class="settings__textarea settings__textarea--high">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tincidunt luctus tellus, eu venenatis metus bibendum eget. Mauris id purus orci. Ut vel lorem mollis, vestibulum massa gravida, pharetra dolor. Nulla dictum sem est. Cras rutrum lectus eu ex malesuada aliquet. 
+Mauris id eros ligula. Proin elit tellus, dictum id est quis, laoreet rutrum risus. 
+
+Nunc in laoreet elit, in interdum augue. Nullam ullamcorper est orci. Sed sem quam, faucibus ut dignissim vel, hendrerit facilisis mauris.</textarea>
+                  <div class="btn__del btn__del--inner">
+                    <i>
+                      <img src="img/svg/del.svg" alt="delete">
+                    </i>
+                    <span class="btn__del-text">удалить</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="popup__item popup__item--right-side">
+          <div class="popup__item-inner">
+            <h3 class="popup__title">настройки блока</h3>
+
+            <div class="settings">
+
+              <div class="settings__item settings__item--large">
+                <div class="settings__row">
+                  <div>
+                    <span class="settings__title">Новостей в блоке</span>
+                    <div class="popup__pm-slider">
+
+                      <div class="popup__slider-arrow">
+                        <i>
+                          <img src="img/svg/minus-slider.svg" alt="minus">
+                        </i>
+                      </div>
+
+                      <div class="popup__slider-number-holder">
+                        <div class="popup__slider-number">4</div>
+                      </div>
+
+                      <div class="popup__slider-arrow">
+                        <i>
+                          <img src="img/svg/plus-slider.svg" alt="plus">
+                        </i>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <span class="settings__title">Картинки</span>
+                    <div class="btn__dots-wrapper">
+
+                      <div class="btn__dots-inner">
+                        <i>
+                          <img src="img/svg/btn-dots.svg" alt="close">
+                        </i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="settings__row">
+                  <div class="settings__label settings__label--large">
+                    <span class="settings__title">Заголовок блока</span>
+                    <input class="settings__input" type="text" value="Новости компании">
+                  </div>
+                  <div class="btn__dots-wrapper">
+                    <div class="btn__dots-inner">
+                      <i>
+                        <img src="img/svg/btn-dots.svg" alt="dots">
+                      </i>
+                    </div>
+                  </div>
+                </div>
+                <div class="settings__row">
+                  <div class="settings__label settings__label--large">
+                    <span class="settings__title">Дата</span>
+                    <input class="settings__input" type="text" value="Дата / Месяц / Год">
+                  </div>
+                  <div class="btn__dots-wrapper">
+                    <div class="btn__dots-inner btn__dots-inner--slider">
+                      <i>
+                        <img src="img/svg/btn-dots.svg" alt="btn">
+                      </i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+
+          </div>
+          <div class="popup__item-inner">
+            <div class="settings">
+              <div class="settings__item settings__item--large">
+                <div class="settings__row settings__row--column">
+                  <div class="settings__label settings__label--large">
+                    <span class="settings__title">Фоновая картинка блока</span>
+                    <div class="settings__input-wrapper">
+                      <div class="btn__review">обзор...</div>
+                      <input class="settings__input" type="text" value="">
+                    </div>
+                  </div>
+                  <div class="settings__label settings__label--small">
+                    <span class="settings__title">Фон блока</span>
+                    <div class="settings__input-wrapper">
+                      <img class="settings__img" src="img/svg/color.svg" alt="color">
+                      <input class="settings__input settings__input--icon" type="text" value="#FFFFFF">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="popup__bottom">
+        <button class="btn__publish">
+          <i>
+            <img src="img/svg/plus.svg" alt="plus">
+          </i>
+          <span class="btn__publish-text">добавить новость</span>
+        </button>
+        <div class="popup__slider">
+
+          <div class="popup__slider-arrow">
+            <i>
+              <img src="img/svg/arrow-left-b.svg" alt="arrow">
+            </i>
+          </div>
+
+          <div class="popup__slider-dots-holder">
+            <div class="popup__slider-dot active"></div>
+            <div class="popup__slider-dot"></div>
+            <div class="popup__slider-dot"></div>
+            <div class="popup__slider-dot"></div>
+          </div>
+
+          <div class="popup__slider-arrow">
+            <i>
+              <img src="img/svg/arrow-right-b.svg" alt="arrow">
+            </i>
+          </div>
+
+        </div>
+        <div class="popup__bottom-side">
+          <div class="btn__del btn__del--large">
+            <i>
+              <img src="img/svg/del.svg" alt="delete">
+            </i>
+            <span class="btn__del-text">удалить весь блок</span>
+          </div>
+          <button class="btn__publish">
+            <span class="btn__publish-text">Опубликовать</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="container">
+    <h2 class="title__second title__second--news">
+      Новости компании
+    </h2>
+    <div class="news">
+      <div class="news__item">
+        <div class="news__img-wrapper">
+          <div class="news__date">10 ноября 2021</div>
+          <img src="img/news-1.png" alt="news">
+        </div>
+        <div class="news__content">
+          <h3 class="news__heading">Новейшая сборка мощного PC</h3>
+          <p class="news__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tincidunt luctus
+            tellus, eu venenatis metus bibendum eget. Mauris id purus orci. Ut vel lorem mollis, vestibulum massa
+            gravida, pharetra dolor. Nulla dictum sem est. Cras rutrum lectus eu ex malesuada aliquet.
+            Mauris id eros ligula. Proin elit tellus, dictum id est quis, laoreet rutrum risus.</p>
+        </div>
+      </div>
+      <div class="news__item">
+        <div class="news__img-wrapper">
+          <div class="news__date">9 октября 2021</div>
+          <img src="img/news-2.png" alt="news">
+        </div>
+        <div class="news__content">
+          <h3 class="news__heading">Снова в продаже водяное охладжение от ThermalTake</h3>
+          <p class="news__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tincidunt luctus
+            tellus, eu venenatis metus bibendum eget. Mauris id purus orci. Ut vel lorem mollis, vestibulum massa
+            gravida, pharetra dolor. Nulla dictum sem est. Cras rutrum lectus eu ex malesuada aliquet.
+            Mauris id eros ligula. Proin elit tellus, dictum id est quis, laoreet rutrum risus.</p>
+        </div>
+      </div>
+      <div class="news__item">
+        <div class="news__img-wrapper">
+          <div class="news__date">1 мая 2021</div>
+          <img src="img/news-3.png" alt="news">
+        </div>
+        <div class="news__content">
+          <h3 class="news__heading">Скидки на комплектующие</h3>
+          <p class="news__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tincidunt luctus
+            tellus, eu venenatis metus bibendum eget. Mauris id purus orci. Ut vel lorem mollis, vestibulum massa
+            gravida, pharetra dolor. Nulla dictum sem est. Cras rutrum lectus eu ex malesuada aliquet.
+            Mauris id eros ligula. Proin elit tellus, dictum id est quis, laoreet rutrum risus.</p>
+        </div>
+      </div>
+      <div class="news__item">
+        <div class="news__img-wrapper">
+          <div class="news__date">15 февраля 2020</div>
+          <img src="img/news-4.png" alt="news">
+        </div>
+        <div class="news__content">
+          <h3 class="news__heading">Розыгрыш игрового ПК совместно с Gigabyte</h3>
+          <p class="news__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tincidunt luctus
+            tellus, eu venenatis metus bibendum eget. Mauris id purus orci. Ut vel lorem mollis, vestibulum massa
+            gravida, pharetra dolor. Nulla dictum sem est. Cras rutrum lectus eu ex malesuada aliquet.
+            Mauris id eros ligula. Proin elit tellus, dictum id est quis, laoreet rutrum risus.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="section section__blue-bg section__recall">
+  <div class="settings__wrapper">
+  <div class="pencil" data-pencil>
+    <img src="img/svg/pencil.svg" alt="pencil">
+  </div>
+  <div class="popup" data-popup>
+    <div class="popup__head">
+      <div class="popup__head-item">
+        <i>
+          <img src="img/svg/popup-dots.svg" alt="dots">
+        </i>
+        <span class="popup__head-text">отзывы</span>
+      </div>
+      <div class="popup__close" data-close>
+        <i>
+          <img src="img/svg/close.svg" alt="close">
+        </i>
+      </div>
+    </div>
+    <div class="popup__body">
+      <div class="popup__body-inner">
+        <div class="popup__item">
+          <h3 class="popup__title">отзывы клиентов</h3>
+          <div class="settings">
+            <div class="settings__item">
+              <div class="settings__row">
+                <div class="settings__label">
+                  <span class="settings__title">Дата</span>
+                  <div class="settings__input-wrapper">
+                    <img class="settings__img" src="img/svg/calendar.svg" alt="calendar">
+                    <input class="settings__input settings__input--icon" type="text" value="10 ноября 2021">
+                  </div>
+                </div>
+                <div class="settings__label">
+                  <span class="settings__title">Время</span>
+                  <input class="settings__input" type="text" value="10:00">
+                </div>
+              </div>
+              <div class="settings__row">
+                <div class="settings__label settings__label--large">
+                  <span class="settings__title">Фото</span>
+                  <div class="settings__input-wrapper">
+                    <div class="btn__review">обзор...</div>
+                    <input class="settings__input" type="text" value="photo.png">
+                  </div>
+                </div>
+              </div>
+              <div class="settings__row">
+                <div class="settings__label settings__label--large">
+                  <span class="settings__title">Имя автора</span>
+                  <input class="settings__input" type="text" value="Александр Алексеев">
+                </div>
+              </div>
+              <div class="settings__row settings__row--bot-indent">
+                <div class="settings__label settings__label--large">
+                  <span class="settings__title">Текст</span>
+                  <textarea class="settings__textarea settings__textarea--high">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tincidunt luctus tellus, eu venenatis metus bibendum eget. Mauris id purus orci. Ut vel lorem mollis, vestibulum massa gravida, pharetra dolor. Nulla dictum sem est. Cras rutrum lectus eu ex malesuada aliquet. 
+Mauris id eros ligula. Proin elit tellus, dictum id est quis, laoreet rutrum risus. 
+
+Nunc in laoreet elit, in interdum augue. Nullam ullamcorper est orci. Sed sem quam, faucibus ut dignissim vel, hendrerit facilisis mauris.</textarea>
+                  <div class="btn__del btn__del--inner">
+                    <i>
+                      <img src="img/svg/del.svg" alt="delete">
+                    </i>
+                    <span class="btn__del-text">удалить</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="settings__item">
+              <div class="settings__row">
+                <div class="settings__label">
+                  <span class="settings__title">Дата</span>
+                  <div class="settings__input-wrapper">
+                    <img class="settings__img" src="img/svg/calendar.svg" alt="calendar">
+                    <input class="settings__input settings__input--icon" type="text" value="10 ноября 2021">
+                  </div>
+                </div>
+                <div class="settings__label">
+                  <span class="settings__title">Время</span>
+                  <input class="settings__input" type="text" value="10:00">
+                </div>
+              </div>
+              <div class="settings__row">
+                <div class="settings__label settings__label--large">
+                  <span class="settings__title">Фото</span>
+                  <div class="settings__input-wrapper">
+                    <div class="btn__review">обзор...</div>
+                    <input class="settings__input" type="text" value="photo.png">
+                  </div>
+                </div>
+              </div>
+              <div class="settings__row">
+                <div class="settings__label settings__label--large">
+                  <span class="settings__title">Имя автора</span>
+                  <input class="settings__input" type="text" value="Александр Алексеев">
+                </div>
+              </div>
+              <div class="settings__row settings__row--bot-indent">
+                <div class="settings__label settings__label--large">
+                  <span class="settings__title">Текст</span>
+                  <textarea class="settings__textarea settings__textarea--high">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tincidunt luctus tellus, eu venenatis metus bibendum eget. Mauris id purus orci. Ut vel lorem mollis, vestibulum massa gravida, pharetra dolor. Nulla dictum sem est. Cras rutrum lectus eu ex malesuada aliquet. 
+Mauris id eros ligula. Proin elit tellus, dictum id est quis, laoreet rutrum risus. 
+
+Nunc in laoreet elit, in interdum augue. Nullam ullamcorper est orci. Sed sem quam, faucibus ut dignissim vel, hendrerit facilisis mauris.</textarea>
+                  <div class="btn__del btn__del--inner">
+                    <i>
+                      <img src="img/svg/del.svg" alt="delete">
+                    </i>
+                    <span class="btn__del-text">удалить</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="popup__item popup__item--right-side">
+          <div class="popup__item-inner">
+            <h3 class="popup__title">настройки блока</h3>
+
+            <div class="settings">
+
+              <div class="settings__item settings__item--large">
+                <div class="settings__row">
+                  <div>
+                    <span class="settings__title">Отзывов в блоке</span>
+                    <div class="popup__pm-slider">
+
+                      <div class="popup__slider-arrow">
+                        <i>
+                          <img src="img/svg/minus-slider.svg" alt="minus">
+                        </i>
+                      </div>
+
+                      <div class="popup__slider-number-holder">
+                        <div class="popup__slider-number">3</div>
+                      </div>
+
+                      <div class="popup__slider-arrow">
+                        <i>
+                          <img src="img/svg/plus-slider.svg" alt="plus">
+                        </i>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <span class="settings__title">Фото</span>
+                    <div class="btn__dots-wrapper">
+
+                      <div class="btn__dots-inner">
+                        <i>
+                          <img src="img/svg/btn-dots.svg" alt="close">
+                        </i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="settings__row">
+                  <div class="settings__label settings__label--large">
+                    <span class="settings__title">Заголовок блока</span>
+                    <input class="settings__input" type="text" value="Реальные отзывы от наших клиентов">
+                  </div>
+                  <div class="btn__dots-wrapper">
+                    <div class="btn__dots-inner">
+                      <i>
+                        <img src="img/svg/btn-dots.svg" alt="dots">
+                      </i>
+                    </div>
+                  </div>
+                </div>
+                <div class="settings__row">
+                  <div class="settings__label settings__label--large">
+                    <span class="settings__title">Дата</span>
+                    <input class="settings__input" type="text" value="Дата / Месяц / Год">
+                  </div>
+                  <div class="btn__dots-wrapper">
+                    <div class="btn__dots-inner btn__dots-inner--slider">
+                      <i>
+                        <img src="img/svg/btn-dots.svg" alt="btn">
+                      </i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+
+          </div>
+          <div class="popup__item-inner">
+            <div class="settings">
+              <div class="settings__item settings__item--large">
+                <div class="settings__row settings__row--column">
+                  <div class="settings__label settings__label--large">
+                    <span class="settings__title">Фоновая картинка блока</span>
+                    <div class="settings__input-wrapper">
+                      <div class="btn__review">обзор...</div>
+                      <input class="settings__input" type="text" value="">
+                    </div>
+                  </div>
+                  <div class="settings__label settings__label--small">
+                    <span class="settings__title">Фон блока</span>
+                    <div class="settings__input-wrapper">
+                      <img class="settings__img" src="img/svg/color.svg" alt="color">
+                      <input class="settings__input settings__input--icon" type="text" value="#FFFFFF">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="popup__bottom">
+        <button class="btn__publish">
+          <i>
+            <img src="img/svg/plus.svg" alt="plus">
+          </i>
+          <span class="btn__publish-text">добавить отзыв</span>
+        </button>
+        <div class="popup__slider">
+
+          <div class="popup__slider-arrow">
+            <i>
+              <img src="img/svg/arrow-left-b.svg" alt="arrow">
+            </i>
+          </div>
+
+          <div class="popup__slider-dots-holder">
+            <div class="popup__slider-dot active"></div>
+            <div class="popup__slider-dot"></div>
+            <div class="popup__slider-dot"></div>
+            <div class="popup__slider-dot"></div>
+          </div>
+
+          <div class="popup__slider-arrow">
+            <i>
+              <img src="img/svg/arrow-right-b.svg" alt="arrow">
+            </i>
+          </div>
+
+        </div>
+        <div class="popup__bottom-side">
+          <div class="btn__del btn__del--large">
+            <i>
+              <img src="img/svg/del.svg" alt="delete">
+            </i>
+            <span class="btn__del-text">удалить весь блок</span>
+          </div>
+          <button class="btn__publish">
+            <span class="btn__publish-text">Опубликовать</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="container">
+    <h2 class="title__second title__second--recall">
+      Реальные отзывы от наших клиентов!
+    </h2>
+
+    <div class="recall__holder">
+      <div class="swiper-button-prev">
+        <img src="img/svg/arrow-left.svg" alt="arrow">
+      </div>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="recall__item">
+              <div class="recall__top">
+                <img class="recall__photo" src="img/recall-1.png" alt="recall">
+                <div class="recall__heading">
+                  <div class="recall__name">Александр Алексеев</div>
+                  <div class="recall__date">30 ноября 2021 в 12:31</div>
+                </div>
+              </div>
+              <p class="recall__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tincidunt
+                luctus
+                tellus, eu venenatis metus bibendum eget. Mauris id purus orci. Ut vel lorem mollis, vestibulum massa
+                gravida,
+                pharetra dolor. Nulla dictum sem est. Cras rutrum lectus eu ex malesuada aliquet.
+                Mauris id eros ligula. Proin elit tellus, dictum id est quis, laoreet rutrum risus.</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="recall__item">
+              <div class="recall__top">
+                <img class="recall__photo" src="img/recall-2.png" alt="recall">
+                <div class="recall__heading">
+                  <div class="recall__name">Александр Алексеев</div>
+                  <div class="recall__date">30 ноября 2021 в 12:31</div>
+                </div>
+              </div>
+              <p class="recall__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tincidunt
+                luctus
+                tellus, eu venenatis metus bibendum eget. Mauris id purus orci. Ut vel lorem mollis, vestibulum massa
+                gravida,
+                pharetra dolor. Nulla dictum sem est. Cras rutrum lectus eu ex malesuada aliquet.
+                Mauris id eros ligula. Proin elit tellus, dictum id est quis, laoreet rutrum risus.</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="recall__item">
+              <div class="recall__top">
+                <img class="recall__photo" src="img/recall-3.png" alt="recall">
+                <div class="recall__heading">
+                  <div class="recall__name">Александр Алексеев</div>
+                  <div class="recall__date">30 ноября 2021 в 12:31</div>
+                </div>
+              </div>
+              <p class="recall__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tincidunt
+                luctus
+                tellus, eu venenatis metus bibendum eget. Mauris id purus orci. Ut vel lorem mollis, vestibulum massa
+                gravida,
+                pharetra dolor. Nulla dictum sem est. Cras rutrum lectus eu ex malesuada aliquet.
+                Mauris id eros ligula. Proin elit tellus, dictum id est quis, laoreet rutrum risus.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next">
+        <img src="img/svg/arrow-right.svg" alt="arrow">
+      </div>
+    </div>
+
+</section>
+    <div class="map">
+  <div class="settings__wrapper">
+  <div class="pencil" data-pencil>
+    <img src="img/svg/pencil.svg" alt="pencil">
+  </div>
+  <div class="popup popup__contacts" data-popup>
+    <div class="popup__head">
+      <div class="popup__head-item">
+        <i>
+          <img src="img/svg/popup-dots.svg" alt="dots">
+        </i>
+        <span class="popup__head-text">контактная информация</span>
+      </div>
+      <div class="popup__close" data-close>
+        <i>
+          <img src="img/svg/close.svg" alt="close">
+        </i>
+      </div>
+    </div>
+    <div class="popup__body">
+      <div class="popup__body-inner">
+        <div class="popup__item">
+
+          <div class="settings settings--gap">
+            <div class="settings__item">
+              <h3 class="popup__title popup__title--item">филиал №1</h3>
+              <div class="settings__row">
+                <div class="settings__label settings__label--large">
+                  <span class="settings__title">Город</span>
+                  <input class="settings__input" type="text" value="Старый Оскол">
+                </div>
+              </div>
+              <div class="settings__row">
+                <div class="settings__label settings__label--large">
+                  <span class="settings__title">Адрес</span>
+                  <input class="settings__input" type="text" value="Загребский бульвар 33 к1">
+                </div>
+              </div>
+              <div class="settings__row">
+                <div class="settings__label settings__label--large">
+                  <span class="settings__title">Телефон</span>
+                  <input class="settings__input" type="text" value="8 800 555 35 35">
+                </div>
+              </div>
+              <div class="settings__row">
+                <div class="settings__label settings__label--large">
+                  <span class="settings__title">Дополнительный телефон</span>
+                  <input class="settings__input" type="text" value="8 800 555 35 35">
+                </div>
+              </div>
+            </div>
+            <div class="settings__item">
+              <div class="settings__item-del">
+                <i>
+                  <img src="img/svg/close.svg" alt="close">
+                </i>
+              </div>
+              <h3 class="popup__title popup__title--item">филиал №2</h3>
+              <div class="settings__row">
+                <div class="settings__label settings__label--large">
+                  <span class="settings__title">Город</span>
+                  <input class="settings__input" type="text" value="Старый Оскол">
+                </div>
+              </div>
+              <div class="settings__row">
+                <div class="settings__label settings__label--large">
+                  <span class="settings__title">Адрес</span>
+                  <input class="settings__input" type="text" value="Загребский бульвар 33 к1">
+                </div>
+              </div>
+              <div class="settings__row">
+                <div class="settings__label settings__label--large">
+                  <span class="settings__title">Телефон</span>
+                  <input class="settings__input" type="text" value="8 800 555 35 35">
+                </div>
+              </div>
+              <div class="settings__row">
+                <div class="settings__label settings__label--large">
+                  <span class="settings__title">Дополнительный телефон</span>
+                  <input class="settings__input" type="text" value="8 800 555 35 35">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popup__item">
+          <div class="popup__item-inner">
+            <h3 class="popup__title">карта, фото и Социальные сети</h3>
+
+            <div class="settings">
+
+              <div class="settings__item settings__item--normal">
+                <div class="settings__row">
+                  <div class="settings__label settings__label--large">
+                    <span class="settings__title">Facebook</span>
+                    <input class="settings__input" type="text" value="">
+                  </div>
+                </div>
+                <div class="settings__row">
+                  <div class="settings__label settings__label--large">
+                    <span class="settings__title">Instagram</span>
+                    <input class="settings__input" type="text" value="">
+                  </div>
+                </div>
+                <div class="settings__row">
+                  <div class="settings__label settings__label--large">
+                    <span class="settings__title">VK</span>
+                    <input class="settings__input" type="text" value="">
+                  </div>
+                </div>
+                <div class="settings__row">
+                  <div class="settings__label settings__label--large">
+                    <span class="settings__title">Twitter</span>
+                    <input class="settings__input" type="text" value="">
+                  </div>
+                </div>
+              </div>
+              <div class="settings__item settings__item--normal">
+                <div class="settings__row">
+                  <div class="settings__label settings__label--large">
+                    <span class="settings__title">Telegram</span>
+                    <input class="settings__input" type="text" value="">
+                  </div>
+                </div>
+                <div class="settings__row settings__row--indent">
+                  <div class="settings__label settings__label--large">
+                    <span class="settings__title">Карта (Яндекс или Google)</span>
+                    <input class="settings__input" type="text" value="yandex.ru/maps/43/?ll=49...">
+                  </div>
+                </div>
+                <div class="settings__row">
+                  <div class="settings__label settings__label--large">
+                    <span class="settings__title">Фотография</span>
+                    <div class="settings__input-wrapper">
+                      <div class="btn__review">обзор...</div>
+                      <input class="settings__input" type="text" value="office.png">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+      <div class="popup__bottom">
+        <button class="btn__publish">
+          <i>
+            <img src="img/svg/plus.svg" alt="plus">
+          </i>
+          <span class="btn__publish-text">добавить филиал</span>
+        </button>
+        <div class="popup__bottom-side">
+          <div class="btn__del btn__del--large">
+            <i>
+              <img src="img/svg/del.svg" alt="delete">
+            </i>
+            <span class="btn__del-text">удалить весь блок</span>
+          </div>
+          <button class="btn__publish">
+            <span class="btn__publish-text">Опубликовать</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div style="position:relative;overflow:hidden;"><a
+      href="https://yandex.ru/maps/org/ofisny_tsentr_dom_byta_na_oktyabrskoy/13509018811/?utm_medium=mapframe&utm_source=maps"
+      style="color:#eee;font-size:12px;position:absolute;top:0px;">Офисный центр Дом быта на Октябрьской</a><a
+      href="https://yandex.ru/maps/10649/stariy-oskol/category/business_center/184107509/?utm_medium=mapframe&utm_source=maps"
+      style="color:#eee;font-size:12px;position:absolute;top:14px;">Бизнес-центр в Старом Осколе</a><iframe
+      src="https://yandex.ru/map-widget/v1/-/CCUbURWGtC" width="100%" height="550" frameborder="0"
+      allowfullscreen="true" style="position:relative;"></iframe></div>
+</div>
+  </main>
+  <footer class="footer">
+  <div class="settings__wrapper">
+  <div class="pencil" data-pencil>
+    <img src="img/svg/pencil.svg" alt="pencil">
+  </div>
+  <div class="popup popup__footer" data-popup>
+    <div class="popup__head">
+      <div class="popup__head-item">
+        <i>
+          <img src="img/svg/popup-dots.svg" alt="dots">
+        </i>
+        <span class="popup__head-text">футер</span>
+      </div>
+      <div class="popup__close" data-close>
+        <i>
+          <img src="img/svg/close.svg" alt="close">
+        </i>
+      </div>
+    </div>
+    <div class="popup__body">
+      <div class="popup__body-inner">
+        <div class="popup__item popup__item--group-footer">
+
+          <div class="settings settings__footer settings--gap">
+            <div class="settings__item settings__item--footer">
+              <h3 class="popup__title popup__title--item">левый блок</h3>
+              <div class="settings__row">
+                <div class="settings__label settings__label--large">
+                  <span class="settings__title">Логотип компании</span>
+                  <div class="settings__input-wrapper">
+                    <div class="btn__review">обзор...</div>
+                    <input class="settings__input" type="text" value="logo.png">
+                  </div>
+                </div>
+              </div>
+              <div class="settings__row">
+                <div class="settings__label settings__label--large">
+                  <span class="settings__title">Копирайт</span>
+                  <input class="settings__input" type="text" value="Текст">
+                </div>
+              </div>
+              <div class="settings__row">
+                <div class="settings__label settings__label--large">
+                  <span class="settings__title">Политика обработки данных</span>
+                  <input class="settings__input" type="text" value="ссылка">
+                </div>
+              </div>
+              <div class="settings__row">
+                <div class="settings__label settings__label--large">
+                  <span class="settings__title">Дополнительная ссылка</span>
+                  <input class="settings__input" type="text" value="">
+                </div>
+              </div>
+            </div>
+            <div class="settings__item settings__item--footer">
+              <h3 class="popup__title popup__title--item">центральный блок</h3>
+              <div class="settings__row">
+                <div class="settings__label settings__label--large">
+                  <span class="settings__title">Произвольный текст или HTML</span>
+                  <textarea class="settings__textarea settings__textarea--footer">...</textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popup__item popup__item--footer">
+          <div class="popup__item-inner">
+            <h3 class="popup__title">правый блок</h3>
+
+            <div class="settings">
+
+              <div class="settings__item settings__item--large">
+                <div class="settings__row">
+                  <div class="settings__label settings__label--large">
+                    <span class="settings__title">Oskol.info</span>
+                    <div class="settings__input-wrapper">
+                      <div class="btn__review btn__review--hidden">скрыть</div>
+                      <input class="settings__input settings__input--hidden" type="text"
+                        value="Cоздано при помощи Oskol.info">
+                    </div>
+                  </div>
+                </div>
+                <div class="settings__row">
+                  <div class="settings__star-text-wrapper">
+                    <img src="img/svg/star.svg" alt="star">
+                    <p class="settings__star-text">Скрыть, либо отредактировать данный блок можно с премиум пакетом
+                      oskol.info</p>
+                  </div>
+                </div>
+                <div class="settings__row">
+                  <div class="btn__footer-wrapper">
+                    <div class="btn__footer">
+                      <span class="btn__footer-text">открыть премиум пакеты</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="popup__item-inner">
+            <div class="settings">
+              <div class="settings__item settings__item--large">
+                <div class="settings__row settings__row--column">
+                  <div class="settings__label settings__label--large">
+                    <span class="settings__title">Фоновая картинка блока</span>
+                    <div class="settings__input-wrapper">
+                      <div class="btn__review">обзор...</div>
+                      <input class="settings__input" type="text" value="">
+                    </div>
+                  </div>
+                  <div class="settings__label settings__label--small">
+                    <span class="settings__title">Фон блока</span>
+                    <div class="settings__input-wrapper">
+                      <img class="settings__img" src="img/svg/color.svg" alt="color">
+                      <input class="settings__input settings__input--icon" type="text" value="#FFFFFF">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="popup__bottom popup__bottom--right">
+        <button class="btn__publish">
+          <span class="btn__publish-text">Опубликовать</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="container">
+    <div class="footer__inner">
+      <div class="copyright__holder">
+        <div class="footer__logo">
+          <i>
+            <img src="img/svg/logo-footer.svg" alt="logo">
+          </i>
+        </div>
+        <div class="copyright__info">
+          <div class="copyright">Copyright 2021. Название компании</div>
+          <a class="copyright__link" href="#">Политика конфиденциальности</a>
+        </div>
+      </div>
+      <div class="creation__holder">
+        <span class="creation__text">Создано c помощью</span>
+        <div class="creation__circle">
+          <div class="creation__circle-inner"></div>
+          <div class="creation__circle-inner-black"></div>
+        </div>
+        <span class="creation__info">oskol.info</span>
+      </div>
+    </div>
+  </div>
+</footer>
+</div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</body>
+
+</html>
