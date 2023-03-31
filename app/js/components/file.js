@@ -1,5 +1,9 @@
-const inputFile = document.querySelector('[data-review-btn]');
+$('[data-input-fake-wrapper]').each((index, fakeWrapper) => {
+  $(fakeWrapper).click(function () {
+    $(this).prev('[data-review-btn]').click();
+  });
+})
 
-inputFile.onchange = function () {
-  document.querySelector('[data-upload-file]').value = this.value.replace("C:\\fakepath\\", "");
-};
+$('[data-review-btn]').change(function () {
+  $(this).prev('[data-upload-file]').val($(this).val().replace("C:\\fakepath\\", ""))
+});
