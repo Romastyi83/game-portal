@@ -73,42 +73,30 @@ text-transform()
       margin-top 10px
       +mq(0, 767px)
         display flex
-  +element(curtain-item)
-    display flex
-    justify-content space-between
-    align-items center
-    +modifier(content)
-      cursor pointer
-    +modifier(tel)
-      margin-left auto
-  +element(curtain-text)
-    font-weight 500
-    font-size 16px
-    line-height 19px
-    text-transform()
-    color #fff
-    +modifier(content)
-      margin-left 7px
-    +modifier(logo)
-      font-weight 800
-      margin-left 16px
-      +mq(0, 767px)
-        font-size 20px
-        line-height 24px
-    +modifier(tel)
-      font-size 18px
-      font-weight 800
-      white-space nowrap
-      +mq(0, 767px)
-        font-size 15px
 .logo
   display flex
   justify-content space-between
   align-items center
   margin-left 67px
   +mq(0, 767px)
-      display none
-
+    display none
+  +element(mob)
+    display flex
+    justify-content space-between
+    align-items center
+    +mq(0, 767px)
+      font-size 20px
+      line-height 24px
+  +element(text)
+    font-size 16px
+    line-height 19px
+    text-transform()
+    color #fff
+    font-weight 800
+    margin-left 16px
+    +mq(0, 767px)
+      font-size 20px
+      line-height 24px
 .hero
   position relative
   background-image url(../img/hero.png)

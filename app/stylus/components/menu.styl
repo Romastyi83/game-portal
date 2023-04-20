@@ -16,3 +16,37 @@
     text-decoration-line underline
     text-transform uppercase
     color #fff
+  +element(btn)
+    display flex
+    justify-content space-between
+    align-items center
+    cursor pointer
+  +element(btn-text)
+    font-weight 500
+    font-size 16px
+    line-height 19px
+    text-transform()
+    color #fff
+    margin-left 7px
+    +mq(0, 767px)
+      display none
+    +modifier(mob)
+      display none
+      +mq(0, 767px)
+        display block
+    +modifier(show)
+      display none
+.tel
+  display flex
+  justify-content space-between
+  align-items center
+  margin-left auto
+  +element(text)
+    line-height 19px
+    text-transform()
+    color #fff
+    font-size 18px
+    font-weight 800
+    white-space nowrap
+    +mq(0, 767px)
+      font-size 15px
