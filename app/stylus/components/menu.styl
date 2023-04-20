@@ -7,6 +7,8 @@
   display none
   &.active
     display flex
+    +mq(0, 767px)
+      display none
   +element(link)
     font-family 'Inter', sans-serif
     font-weight 800
@@ -36,6 +38,11 @@
         display block
     +modifier(show)
       display none
+  +element(mob)
+    display none
+    flex-direction column
+    &.active
+      display flex
 .tel
   display flex
   justify-content space-between
