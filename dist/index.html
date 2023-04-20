@@ -278,7 +278,8 @@
                     <span class="settings__title">Цвет</span>
                     <div class="settings__input-wrapper">
                       <img class="settings__img" src="img/svg/color.svg" alt="color">
-                      <input class="settings__input settings__input--color" type="text" value="#FFFFFF">
+                      <input class="settings__input settings__input--color" type="text" value="#FFFFFF" data-color>
+                      <input class="colorpicker" type="color" value="#ffffff" data-colorpicker>
                     </div>
                   </div>
                 </div>
@@ -301,8 +302,16 @@
                   <div class="settings__label settings__label--large">
                     <span class="settings__title">Логотип в шапке</span>
                     <div class="settings__input-wrapper">
-                      <div class="btn__review">обзор...</div>
-                      <input class="settings__input" type="text" value="image.png">
+
+                      <div class="settings__input-file-wrapper">
+
+                        <div class="btn__review">
+                          обзор...
+                        </div>
+                        <input class="settings__input" type="text" value="image.png" data-upload-file>
+                        <input class="settings__input-file" type="file" data-review-btn>
+                        <div class="settings__input-fake-wrapper" data-input-fake-wrapper></div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -363,19 +372,36 @@
       <div class="container">
         <div class="header__curtain-inner">
           <div class="header__curtain-holder">
-            <div class="header__curtain-item header__curtain-item--content">
+            <div class="header__curtain-item header__curtain-item--content" data-menu-btn>
               <i>
                 <img src="img/svg/content.svg" alt="content">
               </i>
               <span class="header__curtain-text header__curtain-text--content title__menu">Содержание</span>
               <span class="header__curtain-text header__curtain-text--content title__menu--mob">Меню</span>
             </div>
-            <div class="header__curtain-item header__curtain-item--logo title__menu">
+            <div class="logo">
               <i>
                 <img src="img/logo.png" alt="logo">
               </i>
-              <span class="header__curtain-text header__curtain-text--logo">Название компании</span>
+              <span class="header__curtain-text header__curtain-text--logo" data-logo-text>Название компании</span>
             </div>
+            <ul class="menu" data-menu>
+              <li>
+                <a class="menu__link" href="#">каталог</a>
+              </li>
+              <li>
+                <a class="menu__link" href="#">о компании</a>
+              </li>
+              <li>
+                <a class="menu__link" href="#">новости</a>
+              </li>
+              <li>
+                <a class="menu__link" href="#">отзывы</a>
+              </li>
+              <li>
+                <a class="menu__link" href="#">Контакты</a>
+              </li>
+            </ul>
             <div class="header__curtain-item header__curtain-item--tel">
               <span class="header__curtain-text header__curtain-text--tel">8 800 555 35 35</span>
               <a class="btn btn__tel title__menu" href="#">заказать звонок</a>

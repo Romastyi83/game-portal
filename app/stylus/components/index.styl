@@ -79,10 +79,6 @@ text-transform()
     align-items center
     +modifier(content)
       cursor pointer
-    +modifier(logo)
-      margin-left 67px
-      +mq(0, 767px)
-        margin-left 0
     +modifier(tel)
       margin-left auto
   +element(curtain-text)
@@ -105,6 +101,13 @@ text-transform()
       white-space nowrap
       +mq(0, 767px)
         font-size 15px
+.logo
+  display flex
+  justify-content space-between
+  align-items center
+  margin-left 67px
+  +mq(0, 767px)
+      display none
 
 .hero
   position relative
@@ -168,6 +171,7 @@ text-transform()
     max-width 100%
   +element(slide-1)
     background-image url(../img/hero-1.jpg)
+
 .title
   +element(main)
     font-weight 800
