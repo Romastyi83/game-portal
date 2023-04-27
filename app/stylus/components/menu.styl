@@ -5,24 +5,58 @@
   flex-grow 1
   margin-left auto
   display none
-  &.active
+  .header__curtain.active &
     display flex
     +mq(0, 767px)
       display none
+  +element(mob-holder)
+    display flex
+    align-items flex-start
+    .header__curtain.active &
+      +mq(0, 767px)
+        width 100%
+        flex-direction column
+        padding-left 86px
+        margin-top 34px
+  +element(mob-holder-inner)
+    +mq(0, 767px)
+      width 100%
   +element(link)
     font-family 'Inter', sans-serif
     font-weight 800
     font-size 14px
     line-height 17px
     letter-spacing -0.05em
-    text-decoration-line underline
+    text-decoration underline
     text-transform uppercase
     color #fff
+    +modifier(mob)
+      display block
+      font-weight 400
+      font-size 20px
+      letter-spacing -0.05em
+      text-decoration underline
+      color #fff
+      &::first-letter
+        text-transform uppercase
+  +element(btn-holder)
+    min-width 132px
+    display flex
+    align-items center
+    +mq(0, 1150px)
+      min-width auto
   +element(btn)
     display flex
     justify-content space-between
     align-items center
     cursor pointer
+  +element(btn-text-holder)
+    .header__curtain.active &
+      display none
+  +element(btn-text-holder-show)
+    display none
+    .header__curtain.active &
+      display block
   +element(btn-text)
     font-weight 500
     font-size 16px
@@ -36,13 +70,19 @@
       display none
       +mq(0, 767px)
         display block
-    +modifier(show)
-      display none
+  +element(btn-text-show)
+    +mq(0, 767px)
+      display block
   +element(mob)
     display none
     flex-direction column
-    &.active
-      display flex
+    align-items flex-start
+    gap 28px
+    margin-left 0
+    .header__curtain.active &
+      display none
+      +mq(0, 767px)
+        display flex
 .tel
   display flex
   justify-content space-between

@@ -367,30 +367,34 @@
         <span class="header__item-text">в личный кабинет</span>
       </div>
     </div>
-    <div class="header__curtain">
+    <div class="header__curtain" data-curtain>
 
       <div class="container">
         <div class="header__curtain-inner">
           <div class="header__curtain-holder">
-            <div class="menu__btn" data-menu-btn>
-              <i>
-                <img src="img/svg/content.svg" alt="content">
-              </i>
-              <span data-menu-hide>
-                <span class="menu__btn-text">Содержание</span>
-                <span class="menu__btn-text menu__btn-text--mob">Меню</span>
-              </span>
+            <div class="menu__btn-holder">
+              <div class="menu__btn" data-menu-btn>
+                <i>
+                  <img src="img/svg/content.svg" alt="content">
+                </i>
+                <span class="menu__btn-text-holder">
+                  <span class="menu__btn-text">Содержание</span>
+                  <span class="menu__btn-text menu__btn-text--mob">Меню</span>
+                </span>
 
-              <span class="menu__btn-text menu__btn-text--show" data-menu-hide>свернуть</span>
+                <span class="menu__btn-text-holder-show">
+                  <span class="menu__btn-text menu__btn-text-show">свернуть</span>
+                </span>
 
+              </div>
             </div>
             <div class="logo">
               <i>
                 <img src="img/logo.png" alt="logo">
               </i>
-              <span class="logo__text" data-logo-text>Название компании</span>
+              <span class="logo__text">Название компании</span>
             </div>
-            <ul class="menu" data-menu>
+            <ul class="menu">
               <li>
                 <a class="menu__link" href="#">каталог</a>
               </li>
@@ -419,24 +423,30 @@
               </i>
               <span class="logo__text">Название компании</span>
             </div>
-            <ul class="menu menu__mob" data-menu-mob>
-              <li>
-                <a class="menu__link" href="#">каталог</a>
-              </li>
-              <li>
-                <a class="menu__link" href="#">о компании</a>
-              </li>
-              <li>
-                <a class="menu__link" href="#">новости</a>
-              </li>
-              <li>
-                <a class="menu__link" href="#">отзывы</a>
-              </li>
-              <li>
-                <a class="menu__link" href="#">Контакты</a>
-              </li>
-            </ul>
-            <a class="btn btn__tel" href="#">заказать звонок</a>
+            <div class="menu__mob-holder">
+              <div class="menu__mob-holder-inner">
+                <ul class="menu__mob">
+                  <li>
+                    <a class="menu__link--mob" href="#">каталог</a>
+                  </li>
+                  <li>
+                    <a class="menu__link--mob" href="#">о компании</a>
+                  </li>
+                  <li>
+                    <a class="menu__link--mob" href="#">новости</a>
+                  </li>
+                  <li>
+                    <a class="menu__link--mob" href="#">отзывы</a>
+                  </li>
+                  <li>
+                    <a class="menu__link--mob" href="#">Контакты</a>
+                  </li>
+                </ul>
+                <div class="btn__tel-holder">
+                  <a class="btn btn__tel" href="#">заказать звонок</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

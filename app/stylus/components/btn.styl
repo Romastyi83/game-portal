@@ -20,17 +20,29 @@ text-transform()
     transition all .3s ease
     &:hover
       background-color #2777C8
+  +element(tel-holder)
+    .header__curtain.active &
+      +mq(0, 767px)
+        width 100%
+        width 242px
+        max-width 100%
+        margin-top 44px
   +element(tel)
     min-height 40px
     display flex
+    justify-content center
     align-items center
     margin-left 30px
     line-height 1
     transition all .3s ease
     +mq(0, 767px)
+      margin-left 0
       font-size 12px
     &:hover
       background-color #3499FD
+    .header__curtain.active &
+      +mq(0, 767px)
+        width 100%
   +element(products-more)
     color #0D0D0D
     position absolute
@@ -177,7 +189,6 @@ text-transform()
     outline none
     cursor pointer
     padding 0 15px
-      
   +element(footer-text)
     font-weight 800
     font-size 14px
