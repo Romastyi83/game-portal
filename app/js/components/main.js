@@ -87,7 +87,3 @@ $('[data-show-products]').on('click', function (event) {
     $('[data-more-products]').addClass('hidden')
   }
 })
-
-$('.btn__dots-wrapper').on('click', function () {
-  $(this).children(":first").toggleClass('btn__dots-inner--slider')
-})

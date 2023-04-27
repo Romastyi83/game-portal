@@ -79,7 +79,7 @@ text-transform()
     padding 4px
     cursor pointer
   +element(dots-inner)
-    width 62px
+    width 29px
     height 30px
     display flex
     align-items center
@@ -89,8 +89,10 @@ text-transform()
     padding 0 9px
     user-select none
     transition all .3s ease
-    +modifier(slider)
-      width 29px
+    .checked &
+      width 62px
+  +element(dots-checkbox)
+    display none
   +element(review)
     position absolute
     top 50%
