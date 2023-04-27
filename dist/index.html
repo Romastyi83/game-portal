@@ -367,25 +367,34 @@
         <span class="header__item-text">в личный кабинет</span>
       </div>
     </div>
-    <div class="header__curtain">
+    <div class="header__curtain" data-curtain>
 
       <div class="container">
         <div class="header__curtain-inner">
           <div class="header__curtain-holder">
-            <div class="header__curtain-item header__curtain-item--content" data-menu-btn>
-              <i>
-                <img src="img/svg/content.svg" alt="content">
-              </i>
-              <span class="header__curtain-text header__curtain-text--content title__menu">Содержание</span>
-              <span class="header__curtain-text header__curtain-text--content title__menu--mob">Меню</span>
+            <div class="menu__btn-holder">
+              <div class="menu__btn" data-menu-btn>
+                <i>
+                  <img src="img/svg/content.svg" alt="content">
+                </i>
+                <span class="menu__btn-text-holder">
+                  <span class="menu__btn-text">Содержание</span>
+                  <span class="menu__btn-text menu__btn-text--mob">Меню</span>
+                </span>
+
+                <span class="menu__btn-text-holder-show">
+                  <span class="menu__btn-text menu__btn-text-show">свернуть</span>
+                </span>
+
+              </div>
             </div>
             <div class="logo">
               <i>
                 <img src="img/logo.png" alt="logo">
               </i>
-              <span class="header__curtain-text header__curtain-text--logo" data-logo-text>Название компании</span>
+              <span class="logo__text">Название компании</span>
             </div>
-            <ul class="menu" data-menu>
+            <ul class="menu">
               <li>
                 <a class="menu__link" href="#">каталог</a>
               </li>
@@ -402,19 +411,42 @@
                 <a class="menu__link" href="#">Контакты</a>
               </li>
             </ul>
-            <div class="header__curtain-item header__curtain-item--tel">
-              <span class="header__curtain-text header__curtain-text--tel">8 800 555 35 35</span>
+            <div class="tel">
+              <span class="tel__text">8 800 555 35 35</span>
               <a class="btn btn__tel title__menu" href="#">заказать звонок</a>
             </div>
           </div>
           <div class="header__curtain-holder header__curtain-holder--mob">
-            <div class="header__curtain-item header__curtain-item--logo">
+            <div class="logo__mob">
               <i>
                 <img src="img/logo-mob.png" alt="logo">
               </i>
-              <span class="header__curtain-text header__curtain-text--logo">Название компании</span>
+              <span class="logo__text">Название компании</span>
             </div>
-            <a class="btn btn__tel" href="#">заказать звонок</a>
+            <div class="menu__mob-holder">
+              <div class="menu__mob-holder-inner">
+                <ul class="menu__mob">
+                  <li>
+                    <a class="menu__link--mob" href="#">каталог</a>
+                  </li>
+                  <li>
+                    <a class="menu__link--mob" href="#">о компании</a>
+                  </li>
+                  <li>
+                    <a class="menu__link--mob" href="#">новости</a>
+                  </li>
+                  <li>
+                    <a class="menu__link--mob" href="#">отзывы</a>
+                  </li>
+                  <li>
+                    <a class="menu__link--mob" href="#">Контакты</a>
+                  </li>
+                </ul>
+                <div class="btn__tel-holder">
+                  <a class="btn btn__tel" href="#">заказать звонок</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
