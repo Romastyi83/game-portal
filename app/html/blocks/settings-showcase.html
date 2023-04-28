@@ -20,90 +20,141 @@
       <div class="popup__body-inner">
         <div class="popup__item">
           <h3 class="popup__title">витрина товаров</h3>
-          <div class="settings">
-            <div class="settings__item">
-              <div class="settings__row">
-                <div class="settings__label settings__label--large">
-                  <span class="settings__title">Название позиции</span>
-                  <input class="settings__input" type="text" value="MSI GeForce 2080 Super 6GB">
-                </div>
-              </div>
-              <div class="settings__row">
-                <div class="settings__label settings__label--large">
-                  <span class="settings__title">Цена</span>
-                  <input class="settings__input" type="text" value="238 500 ₽">
-                </div>
-              </div>
-              <div class="settings__row">
-                <div class="settings__label settings__label--large">
-                  <span class="settings__title">Старая цена (зачеркнута)</span>
-                  <input class="settings__input" type="text" value="248 500 ₽">
-                </div>
-              </div>
-              <div class="settings__row">
-                <div class="settings__label settings__label--large">
-                  <span class="settings__title">Картинка</span>
-                  <div class="settings__input-wrapper">
-                    <div class="settings__input-file-wrapper">
-                      <div class="btn__review">
-                        обзор...
+          <div class="settings settings__slider" data-showcase-slider>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="settings__item">
+                  <div class="settings__row">
+                    <div class="settings__label settings__label--large">
+                      <span class="settings__title">Название позиции</span>
+                      <input class="settings__input" type="text" value="MSI GeForce 2080 Super 6GB">
+                    </div>
+                  </div>
+                  <div class="settings__row">
+                    <div class="settings__label settings__label--large">
+                      <span class="settings__title">Цена</span>
+                      <input class="settings__input" type="text" value="238 500 ₽">
+                    </div>
+                  </div>
+                  <div class="settings__row">
+                    <div class="settings__label settings__label--large">
+                      <span class="settings__title">Старая цена (зачеркнута)</span>
+                      <input class="settings__input" type="text" value="248 500 ₽">
+                    </div>
+                  </div>
+                  <div class="settings__row">
+                    <div class="settings__label settings__label--large">
+                      <span class="settings__title">Картинка</span>
+                      <div class="settings__input-wrapper">
+                        <div class="settings__input-file-wrapper">
+                          <div class="btn__review">
+                            обзор...
+                          </div>
+                          <input class="settings__input" type="text" value="image.png" data-upload-file>
+                          <input class="settings__input-file" type="file" data-review-btn>
+                          <div class="settings__input-fake-wrapper" data-input-fake-wrapper></div>
+                        </div>
                       </div>
-                      <input class="settings__input" type="text" value="image.png" data-upload-file>
-                      <input class="settings__input-file" type="file" data-review-btn>
-                      <div class="settings__input-fake-wrapper" data-input-fake-wrapper></div>
+                    </div>
+                  </div>
+                  <div class="btn__del-wrapper">
+                    <div class="btn__del" data-del-showcase-slide>
+                      <i>
+                        <img src="img/svg/del.svg" alt="delete">
+                      </i>
+                      <span class="btn__del-text">удалить</span>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="btn__del-wrapper">
-                <div class="btn__del">
-                  <i>
-                    <img src="img/svg/del.svg" alt="delete">
-                  </i>
-                  <span class="btn__del-text">удалить</span>
-                </div>
-              </div>
-            </div>
-            <div class="settings__item">
-              <div class="settings__row">
-                <div class="settings__label settings__label--large">
-                  <span class="settings__title">Название позиции</span>
-                  <input class="settings__input" type="text" value="AMD Ryzen 7 3700X">
-                </div>
-              </div>
-              <div class="settings__row">
-                <div class="settings__label settings__label--large">
-                  <span class="settings__title">Цена</span>
-                  <input class="settings__input" type="text" value="28 500 ₽">
-                </div>
-              </div>
-              <div class="settings__row">
-                <div class="settings__label settings__label--large">
-                  <span class="settings__title">Старая цена (зачеркнута)</span>
-                  <input class="settings__input" type="text" value="30 000 ₽">
-                </div>
-              </div>
-              <div class="settings__row">
-                <div class="settings__label settings__label--large">
-                  <span class="settings__title">Картинка</span>
-                  <div class="settings__input-wrapper">
-                    <div class="settings__input-file-wrapper">
-                      <div class="btn__review">
-                        обзор...
+              <div class="swiper-slide">
+                <div class="settings__item">
+                  <div class="settings__row">
+                    <div class="settings__label settings__label--large">
+                      <span class="settings__title">Название позиции</span>
+                      <input class="settings__input" type="text" value="AMD Ryzen 7 3700X">
+                    </div>
+                  </div>
+                  <div class="settings__row">
+                    <div class="settings__label settings__label--large">
+                      <span class="settings__title">Цена</span>
+                      <input class="settings__input" type="text" value="28 500 ₽">
+                    </div>
+                  </div>
+                  <div class="settings__row">
+                    <div class="settings__label settings__label--large">
+                      <span class="settings__title">Старая цена (зачеркнута)</span>
+                      <input class="settings__input" type="text" value="30 000 ₽">
+                    </div>
+                  </div>
+                  <div class="settings__row">
+                    <div class="settings__label settings__label--large">
+                      <span class="settings__title">Картинка</span>
+                      <div class="settings__input-wrapper">
+                        <div class="settings__input-file-wrapper">
+                          <div class="btn__review">
+                            обзор...
+                          </div>
+                          <input class="settings__input" type="text" value="image.png" data-upload-file>
+                          <input class="settings__input-file" type="file" data-review-btn>
+                          <div class="settings__input-fake-wrapper" data-input-fake-wrapper></div>
+                        </div>
                       </div>
-                      <input class="settings__input" type="text" value="image.png" data-upload-file>
-                      <input class="settings__input-file" type="file" data-review-btn>
-                      <div class="settings__input-fake-wrapper" data-input-fake-wrapper></div>
+                    </div>
+                  </div>
+                  <div class="btn__del-wrapper">
+                    <div class="btn__del" data-del-showcase-slide>
+                      <i>
+                        <img src="img/svg/del.svg" alt="delete">
+                      </i>
+                      <span class="btn__del-text">удалить</span>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="btn__del-wrapper">
-                <div class="btn__del">
-                  <i>
-                    <img src="img/svg/del.svg" alt="delete">
-                  </i>
-                  <span class="btn__del-text">удалить</span>
+              <div class="swiper-slide">
+                <div class="settings__item">
+                  <div class="settings__row">
+                    <div class="settings__label settings__label--large">
+                      <span class="settings__title">Название позиции</span>
+                      <input class="settings__input" type="text" value="AMD Ryzen 7 3700X">
+                    </div>
+                  </div>
+                  <div class="settings__row">
+                    <div class="settings__label settings__label--large">
+                      <span class="settings__title">Цена</span>
+                      <input class="settings__input" type="text" value="28 500 ₽">
+                    </div>
+                  </div>
+                  <div class="settings__row">
+                    <div class="settings__label settings__label--large">
+                      <span class="settings__title">Старая цена (зачеркнута)</span>
+                      <input class="settings__input" type="text" value="30 000 ₽">
+                    </div>
+                  </div>
+                  <div class="settings__row">
+                    <div class="settings__label settings__label--large">
+                      <span class="settings__title">Картинка</span>
+                      <div class="settings__input-wrapper">
+                        <div class="settings__input-file-wrapper">
+                          <div class="btn__review">
+                            обзор...
+                          </div>
+                          <input class="settings__input" type="text" value="image.png" data-upload-file>
+                          <input class="settings__input-file" type="file" data-review-btn>
+                          <div class="settings__input-fake-wrapper" data-input-fake-wrapper></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="btn__del-wrapper">
+                    <div class="btn__del" data-del-showcase-slide>
+                      <i>
+                        <img src="img/svg/del.svg" alt="delete">
+                      </i>
+                      <span class="btn__del-text">удалить</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -121,17 +172,17 @@
                     <span class="settings__title">Товаров в блоке</span>
                     <div class="popup__pm-slider">
 
-                      <div class="popup__slider-arrow">
+                      <div class="popup__slider-arrow" data-counter-min-showcase-slides>
                         <i>
                           <img src="img/svg/minus-slider.svg" alt="minus">
                         </i>
                       </div>
 
                       <div class="popup__slider-number-holder">
-                        <div class="popup__slider-number">4</div>
+                        <div class="popup__slider-number" data-counter-showcase-slides></div>
                       </div>
 
-                      <div class="popup__slider-arrow">
+                      <div class="popup__slider-arrow" data-counter-max-showcase-slides>
                         <i>
                           <img src="img/svg/plus-slider.svg" alt="plus">
                         </i>
@@ -194,7 +245,7 @@
 
       </div>
       <div class="popup__bottom">
-        <button class="btn__publish">
+        <button class="btn__publish" data-add-showcase-slide>
           <i>
             <img src="img/svg/plus.svg" alt="plus">
           </i>
@@ -202,20 +253,16 @@
         </button>
         <div class="popup__slider">
 
-          <div class="popup__slider-arrow">
+          <div class="popup__slider-arrow" data-showcase-slider-prev>
             <i>
               <img src="img/svg/arrow-left-b.svg" alt="arrow">
             </i>
           </div>
 
-          <div class="popup__slider-dots-holder">
-            <div class="popup__slider-dot active"></div>
-            <div class="popup__slider-dot"></div>
-            <div class="popup__slider-dot"></div>
-            <div class="popup__slider-dot"></div>
+          <div class="popup__slider-dots-holder" data-showcase-slider-pagination>
           </div>
 
-          <div class="popup__slider-arrow">
+          <div class="popup__slider-arrow" data-showcase-slider-next>
             <i>
               <img src="img/svg/arrow-right-b.svg" alt="arrow">
             </i>
