@@ -28,9 +28,9 @@ const settingsTopSwiper = new Swiper('[data-settings-slider]', {
 
 $('[data-del-slide]').each((index, delSlide) => {
   $(delSlide).click(function () {
-    $(this).closest('.swiper-slide').remove();
-    settingsTopSwiper.update();
-    console.log($(this).closest('[data-pencil]'))
-    // $(this).closest('[data-pencil]').click();
+    setTimeout(function () {
+      $(delSlide).closest('.swiper-slide').remove();
+      settingsTopSwiper.update();
+    }, 100);
   });
 })
