@@ -52,3 +52,16 @@
 .settings
   +element(slider)
     overflow hidden
+    
+[data-settings-slider-pagination]
+  .swiper-pagination-bullet
+    width 15px
+    height 15px
+    background-color transparent
+    border 1px solid #000
+    border-radius 50%
+    margin 0
+  .swiper-pagination-bullet-active
+    background-color #000
+.swiper-horizontal>.swiper-pagination-bullets[data-settings-slider-pagination], .swiper-pagination-bullets.swiper-pagination-horizontal[data-settings-slider-pagination]
+  width auto

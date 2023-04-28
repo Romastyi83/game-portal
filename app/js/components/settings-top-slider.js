@@ -1,13 +1,15 @@
+
 const settingsTopSwiper = new Swiper('[data-settings-slider]', {
   slidesPerView: 2,
   allowTouchMove: true,
-  autoplay: {
-    delay: 1000,
+  navigation: {
+    nextEl: '[data-settings-slider-next]',
+    prevEl: '[data-settings-slider-prev]',
   },
-  // pagination: {
-  //   el: '.settings-top-swiper-pagination',
-  //   clickable: true,
-  // },
+  pagination: {
+    el: '[data-settings-slider-pagination]',
+    clickable: true,
+  },
   breakpoints: {
     320: {
       slidesPerView: 1,
@@ -24,4 +26,11 @@ const settingsTopSwiper = new Swiper('[data-settings-slider]', {
   },
 });
 
-console.log('bdfbh')
+$('[data-del-slide]').each((index, delSlide) => {
+  $(delSlide).click(function () {
+    $(this).closest('.swiper-slide').remove();
+    settingsTopSwiper.update();
+    console.log($(this).closest('[data-pencil]'))
+    // $(this).closest('[data-pencil]').click();
+  });
+})
