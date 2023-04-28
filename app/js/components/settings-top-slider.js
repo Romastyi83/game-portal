@@ -35,6 +35,7 @@ const initializationDelSlide = function () {
       setTimeout(function () {
         $(delSlide).closest('.swiper-slide').remove();
         settingsTopSwiper.update();
+        writeCounterSlides();
       }, 100);
     });
   })
@@ -47,5 +48,26 @@ $('[data-add-slide]').each((index, addSlide) => {
     $('[data-settings-slider] .swiper-slide:last-child').clone().appendTo($('[data-settings-slider] .swiper-wrapper'));
     settingsTopSwiper.update();
     initializationDelSlide();
+    writeCounterSlides();
   });
 })
+
+$('[data-counter-min-slides]').click(function () {
+  if (+($('[data-counter-slides]').text()) <= 1) {
+    return
+  }
+  $('[data-counter-slides]').text(+($('[data-counter-slides]').text()) - 1);
+});
+
+const writeCounterSlides = function () {
+  $('[data-counter-slides]').text($('[data-settings-slider] .swiper-slide').length);
+}
+
+writeCounterSlides();
+
+$('[data-counter-max-slides]').click(function () {
+  if (+($('[data-counter-slides]').text()) >= $('[data-settings-slider] .swiper-slide').length) {
+    return
+  }
+  $('[data-counter-slides]').text(+($('[data-counter-slides]').text()) + 1);
+});
