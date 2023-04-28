@@ -26,11 +26,26 @@ const settingsTopSwiper = new Swiper('[data-settings-slider]', {
   },
 });
 
-$('[data-del-slide]').each((index, delSlide) => {
-  $(delSlide).click(function () {
-    setTimeout(function () {
-      $(delSlide).closest('.swiper-slide').remove();
-      settingsTopSwiper.update();
-    }, 100);
+const initializationDelSlide = function () {
+  $('[data-del-slide]').each((index, delSlide) => {
+    $(delSlide).click(function () {
+      if ($('[data-settings-slider] .swiper-slide').length === 1) {
+        return
+      }
+      setTimeout(function () {
+        $(delSlide).closest('.swiper-slide').remove();
+        settingsTopSwiper.update();
+      }, 100);
+    });
+  })
+}
+
+initializationDelSlide();
+
+$('[data-add-slide]').each((index, addSlide) => {
+  $(addSlide).click(function () {
+    $('[data-settings-slider] .swiper-slide:last-child').clone().appendTo($('[data-settings-slider] .swiper-wrapper'));
+    settingsTopSwiper.update();
+    initializationDelSlide();
   });
 })
