@@ -36,6 +36,7 @@ const initializationDelContactsSlide = function () {
         $(delSlide).closest('.swiper-slide').remove();
         settingsContactsSwiper.update();
         writeCounterContactsSlides();
+        filiation();
       }, 100);
     });
   })
@@ -49,6 +50,7 @@ $('[data-add-contacts-slide]').each((index, addSlide) => {
     settingsContactsSwiper.update();
     initializationDelContactsSlide();
     writeCounterContactsSlides();
+    filiation();
   });
 })
 
@@ -71,3 +73,11 @@ $('[data-counter-max-contacts-slides]').click(function () {
   }
   $('[data-counter-contacts-slides]').text(+($('[data-counter-contacts-slides]').text()) + 1);
 });
+
+const filiation = function () {
+  $('[data-filiation]').each((index, x) => {
+    $(x).text(index + 1);
+  });
+}
+
+filiation();
