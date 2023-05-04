@@ -75,8 +75,8 @@ $('[data-counter-max-contacts-slides]').click(function () {
 });
 
 const filiation = function () {
-  $('[data-filiation]').each((index, x) => {
-    $(x).text(index + 1);
+  $('[data-filiation]').each((index, filiation) => {
+    $(filiation).text(index + 1);
   });
 }
 
