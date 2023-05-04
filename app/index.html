@@ -2484,65 +2484,77 @@ Nunc in laoreet elit, in interdum augue. Nullam ullamcorper est orci. Sed sem qu
     </div>
     <div class="popup__body">
       <div class="popup__body-inner">
+
         <div class="popup__item">
 
-          <div class="settings settings--gap">
-            <div class="settings__item">
-              <h3 class="popup__title popup__title--item">филиал №1</h3>
-              <div class="settings__row">
-                <div class="settings__label settings__label--large">
-                  <span class="settings__title">Город</span>
-                  <input class="settings__input" type="text" value="Старый Оскол">
+          <div class="settings settings--gap settings__slider" data-contacts-slider>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="settings__item">
+                  <div class="settings__item-del" data-del-contacts-slide>
+                    <i>
+                      <img src="img/svg/close.svg" alt="close">
+                    </i>
+                  </div>
+                  <h3 class="popup__title popup__title--item">филиал №1</h3>
+                  <div class="settings__row">
+                    <div class="settings__label settings__label--large">
+                      <span class="settings__title">Город</span>
+                      <input class="settings__input" type="text" value="Старый Оскол">
+                    </div>
+                  </div>
+                  <div class="settings__row">
+                    <div class="settings__label settings__label--large">
+                      <span class="settings__title">Адрес</span>
+                      <input class="settings__input" type="text" value="Загребский бульвар 33 к1">
+                    </div>
+                  </div>
+                  <div class="settings__row">
+                    <div class="settings__label settings__label--large">
+                      <span class="settings__title">Телефон</span>
+                      <input class="settings__input" type="text" value="8 800 555 35 35">
+                    </div>
+                  </div>
+                  <div class="settings__row">
+                    <div class="settings__label settings__label--large">
+                      <span class="settings__title">Дополнительный телефон</span>
+                      <input class="settings__input" type="text" value="8 800 555 35 35">
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="settings__row">
-                <div class="settings__label settings__label--large">
-                  <span class="settings__title">Адрес</span>
-                  <input class="settings__input" type="text" value="Загребский бульвар 33 к1">
-                </div>
-              </div>
-              <div class="settings__row">
-                <div class="settings__label settings__label--large">
-                  <span class="settings__title">Телефон</span>
-                  <input class="settings__input" type="text" value="8 800 555 35 35">
-                </div>
-              </div>
-              <div class="settings__row">
-                <div class="settings__label settings__label--large">
-                  <span class="settings__title">Дополнительный телефон</span>
-                  <input class="settings__input" type="text" value="8 800 555 35 35">
-                </div>
-              </div>
-            </div>
-            <div class="settings__item">
-              <div class="settings__item-del">
-                <i>
-                  <img src="img/svg/close.svg" alt="close">
-                </i>
-              </div>
-              <h3 class="popup__title popup__title--item">филиал №2</h3>
-              <div class="settings__row">
-                <div class="settings__label settings__label--large">
-                  <span class="settings__title">Город</span>
-                  <input class="settings__input" type="text" value="Старый Оскол">
-                </div>
-              </div>
-              <div class="settings__row">
-                <div class="settings__label settings__label--large">
-                  <span class="settings__title">Адрес</span>
-                  <input class="settings__input" type="text" value="Загребский бульвар 33 к1">
-                </div>
-              </div>
-              <div class="settings__row">
-                <div class="settings__label settings__label--large">
-                  <span class="settings__title">Телефон</span>
-                  <input class="settings__input" type="text" value="8 800 555 35 35">
-                </div>
-              </div>
-              <div class="settings__row">
-                <div class="settings__label settings__label--large">
-                  <span class="settings__title">Дополнительный телефон</span>
-                  <input class="settings__input" type="text" value="8 800 555 35 35">
+              <div class="swiper-slide">
+                <div class="settings__item">
+                  <div class="settings__item-del" data-del-contacts-slide>
+                    <i>
+                      <img src="img/svg/close.svg" alt="close">
+                    </i>
+                  </div>
+                  <h3 class="popup__title popup__title--item">филиал №2</h3>
+                  <div class="settings__row">
+                    <div class="settings__label settings__label--large">
+                      <span class="settings__title">Город</span>
+                      <input class="settings__input" type="text" value="Старый Оскол">
+                    </div>
+                  </div>
+                  <div class="settings__row">
+                    <div class="settings__label settings__label--large">
+                      <span class="settings__title">Адрес</span>
+                      <input class="settings__input" type="text" value="Загребский бульвар 33 к1">
+                    </div>
+                  </div>
+                  <div class="settings__row">
+                    <div class="settings__label settings__label--large">
+                      <span class="settings__title">Телефон</span>
+                      <input class="settings__input" type="text" value="8 800 555 35 35">
+                    </div>
+                  </div>
+                  <div class="settings__row">
+                    <div class="settings__label settings__label--large">
+                      <span class="settings__title">Дополнительный телефон</span>
+                      <input class="settings__input" type="text" value="8 800 555 35 35">
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -2619,12 +2631,32 @@ Nunc in laoreet elit, in interdum augue. Nullam ullamcorper est orci. Sed sem qu
 
       </div>
       <div class="popup__bottom">
-        <button class="btn__publish">
+        <button class="btn__publish" data-add-contacts-slide>
           <i>
             <img src="img/svg/plus.svg" alt="plus">
           </i>
           <span class="btn__publish-text">добавить филиал</span>
         </button>
+
+        <div class="popup__slider">
+
+          <div class="popup__slider-arrow" data-contacts-slider-prev>
+            <i>
+              <img src="img/svg/arrow-left-b.svg" alt="arrow">
+            </i>
+          </div>
+
+          <div class="popup__slider-dots-holder" data-contacts-slider-pagination>
+          </div>
+
+          <div class="popup__slider-arrow" data-contacts-slider-next>
+            <i>
+              <img src="img/svg/arrow-right-b.svg" alt="arrow">
+            </i>
+          </div>
+
+        </div>
+
         <div class="popup__bottom-side">
           <div class="btn__del btn__del--large">
             <i>
