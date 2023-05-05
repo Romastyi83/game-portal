@@ -15,3 +15,7 @@ $('.btn__dots-wrapper').click(function () {
     checkbox.prop("checked", true);
   }
 });
+
+$('[data-leader-img-checkbox]').click(function () {
+  $('[data-leader-img-checkbox]').is('.checked') ? $('[data-leader-img]').show() : $('[data-leader-img]').hide();
+});

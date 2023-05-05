@@ -36,6 +36,7 @@ const initializationDelNewsSlide = function () {
         $(delSlide).closest('.swiper-slide').remove();
         settingsNewsSwiper.update();
         writeCounterNewsSlides();
+        textarea();
       }, 100);
     });
   })
@@ -49,6 +50,7 @@ $('[data-add-news-slide]').each((index, addSlide) => {
     settingsNewsSwiper.update();
     initializationDelNewsSlide();
     writeCounterNewsSlides();
+    textarea();
   });
 })
 

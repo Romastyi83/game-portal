@@ -1,0 +1,77 @@
+.simplebar-track.simplebar-vertical
+  width 21px
+.simplebar-track
+  background-color transparent
+  border-radius 3.5px
+  &:before
+    content ''
+    position absolute
+    top 0
+    left 9px
+    right 9px
+    bottom 0
+    background-color #DFDFDF
+.simplebar-scrollbar
+  height 28px
+  width 21px
+  background-color #fff
+  border-radius 7px
+  background-image url(../img/svg/scroll.svg)
+  background-position center
+  background-repeat no-repeat
+  overflow visible
+  &:before
+    display none
+.scroll
+  width 100%
+  height 118px
+  overflow auto
+  position relative
+  &:before
+    content ''
+    position absolute
+    height 100%
+    width 30px
+    top 0
+    right 0
+    background-color #fff
+    z-index 1
+  +element(wrapper)
+    width 100%
+    border 1px solid #dcdcdc
+    border-radius 8px
+    padding 12px 12px 24px 12px
+    overflow hidden
+  +modifier(high)
+    min-height 232px
+    +mq(0, 767px)
+      min-height 152px
+  +modifier(footer)
+    min-height 216px
+    +mq(0, 767px)
+      min-height 152px
+  +element(textarea)
+    position relative
+    width 100%
+    min-height 116px
+    background #fff
+    border none
+    outline none
+    font-family 'Inter', sans-serif
+    font-weight 400
+    font-size 14px
+    line-height 1
+    letter-spacing -0.05em
+    color #000000
+    resize none
+    padding-right 20px
+    +modifier(high)
+      min-height 270px
+      +mq(0, 767px)
+        min-height 190px
+    +modifier(footer)
+      min-height 214px
+      +mq(0, 767px)
+        min-height 150px
+
+    

@@ -36,6 +36,7 @@ const initializationDelRecallSlide = function () {
         $(delSlide).closest('.swiper-slide').remove();
         settingsRecallSwiper.update();
         writeCounterRecallSlides();
+        textarea();
       }, 100);
     });
   })
@@ -46,9 +47,11 @@ initializationDelRecallSlide();
 $('[data-add-recall-slide]').each((index, addSlide) => {
   $(addSlide).click(function () {
     $('[data-recall-slider] .swiper-slide:last-child').clone().appendTo($('[data-recall-slider] .swiper-wrapper'));
+
     settingsRecallSwiper.update();
     initializationDelRecallSlide();
     writeCounterRecallSlides();
+    textarea();
   });
 })
 
