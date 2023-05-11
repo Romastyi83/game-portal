@@ -1,7 +1,7 @@
 
 const settingsRecallSwiper = new Swiper('[data-recall-slider]', {
   slidesPerView: 2,
-  allowTouchMove: true,
+  allowTouchMove: false,
   navigation: {
     nextEl: '[data-recall-slider-next]',
     prevEl: '[data-recall-slider-prev]',
@@ -14,6 +14,7 @@ const settingsRecallSwiper = new Swiper('[data-recall-slider]', {
     320: {
       slidesPerView: 1,
       spaceBetween: 27,
+      allowTouchMove: true,
     },
     768: {
       slidesPerView: 2,
@@ -36,7 +37,7 @@ const initializationDelRecallSlide = function () {
         $(delSlide).closest('.swiper-slide').remove();
         settingsRecallSwiper.update();
         writeCounterRecallSlides();
-        textarea();
+        delBullet();
       }, 100);
     });
   })
@@ -47,11 +48,10 @@ initializationDelRecallSlide();
 $('[data-add-recall-slide]').each((index, addSlide) => {
   $(addSlide).click(function () {
     $('[data-recall-slider] .swiper-slide:last-child').clone().appendTo($('[data-recall-slider] .swiper-wrapper'));
-
     settingsRecallSwiper.update();
     initializationDelRecallSlide();
     writeCounterRecallSlides();
-    textarea();
+    delBullet();
   });
 })
 

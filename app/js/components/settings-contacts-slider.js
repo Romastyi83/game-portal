@@ -1,7 +1,7 @@
 
 const settingsContactsSwiper = new Swiper('[data-contacts-slider]', {
   slidesPerView: 2,
-  allowTouchMove: true,
+  allowTouchMove: false,
   navigation: {
     nextEl: '[data-contacts-slider-next]',
     prevEl: '[data-contacts-slider-prev]',
@@ -14,6 +14,7 @@ const settingsContactsSwiper = new Swiper('[data-contacts-slider]', {
     320: {
       slidesPerView: 1,
       spaceBetween: 27,
+      allowTouchMove: true,
     },
     768: {
       slidesPerView: 2,

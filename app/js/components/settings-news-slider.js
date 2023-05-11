@@ -1,7 +1,7 @@
 
 const settingsNewsSwiper = new Swiper('[data-news-slider]', {
   slidesPerView: 2,
-  allowTouchMove: true,
+  allowTouchMove: false,
   navigation: {
     nextEl: '[data-news-slider-next]',
     prevEl: '[data-news-slider-prev]',
@@ -14,6 +14,7 @@ const settingsNewsSwiper = new Swiper('[data-news-slider]', {
     320: {
       slidesPerView: 1,
       spaceBetween: 27,
+      allowTouchMove: true,
     },
     768: {
       slidesPerView: 2,
@@ -36,7 +37,7 @@ const initializationDelNewsSlide = function () {
         $(delSlide).closest('.swiper-slide').remove();
         settingsNewsSwiper.update();
         writeCounterNewsSlides();
-        textarea();
+        delBullet();
       }, 100);
     });
   })
@@ -50,7 +51,7 @@ $('[data-add-news-slide]').each((index, addSlide) => {
     settingsNewsSwiper.update();
     initializationDelNewsSlide();
     writeCounterNewsSlides();
-    textarea();
+    delBullet();
   });
 })
 

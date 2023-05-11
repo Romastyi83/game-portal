@@ -42,9 +42,6 @@ const topSwiper = new Swiper('.top-swiper', {
 $('[data-pencil]').on('click', function () {
   $('[data-popup]').removeClass('active')
   $(this).next().addClass('active')
-  setTimeout(function () {
-    textarea();
-  }, 100);
 })
 
 $(document).click(function (e) {

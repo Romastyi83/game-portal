@@ -1,7 +1,7 @@
 
 const settingsTopSwiper = new Swiper('[data-settings-slider]', {
   slidesPerView: 2,
-  allowTouchMove: true,
+  allowTouchMove: false,
   navigation: {
     nextEl: '[data-settings-slider-next]',
     prevEl: '[data-settings-slider-prev]',
@@ -14,6 +14,7 @@ const settingsTopSwiper = new Swiper('[data-settings-slider]', {
     320: {
       slidesPerView: 1,
       spaceBetween: 27,
+      allowTouchMove: true,
     },
     768: {
       slidesPerView: 2,
@@ -36,6 +37,7 @@ const initializationDelSlide = function () {
         $(delSlide).closest('.swiper-slide').remove();
         settingsTopSwiper.update();
         writeCounterSlides();
+        delBullet();
       }, 100);
     });
   })
@@ -49,6 +51,7 @@ $('[data-add-slide]').each((index, addSlide) => {
     settingsTopSwiper.update();
     initializationDelSlide();
     writeCounterSlides();
+    delBullet();
   });
 })
 
@@ -71,3 +74,51 @@ $('[data-counter-max-slides]').click(function () {
   }
   $('[data-counter-slides]').text(+($('[data-counter-slides]').text()) + 1);
 });
+
+if ($('.popup__slider').is($('.swiper-pagination-bullet'))) {
+
+}
+
+const delBullet = function () {
+
+  $('.swiper-pagination-bullets').each((index, pagination) => {
+
+    if ($(pagination).children().length == 1) {
+      console.log(pagination)
+      $(pagination).parent($('.popup__slider')).css("opacity", "0")
+    } else {
+      $(pagination).parent($('.popup__slider')).css("opacity", "1")
+      // console.log(pagination)
+    }
+
+    // $('.swiper-pagination-bullet').parent($(pagination)).each((index, bullet) => {
+
+    //   console.log(bullet)
+
+    //   if ($(bullet).length == 1) {
+    //     console.log(index)
+    //     $(pagination).css("background-color", "green")
+    //   } else {
+    //     $(pagination).css("background-color", "red")
+    //     console.log('x')
+    //     console.log(index)
+    //   }
+
+    // })
+
+
+    // if ($('.swiper-pagination-bullet').parent(pagination).length == 1) {
+    //   console.log(index)
+    //   $(pagination).css("background-color", "green")
+    // } else {
+    //   $(pagination).css("background-color", "red")
+    //   console.log('x')
+    //   console.log(index)
+    // }
+    // $(pagination).is($('.swiper-pagination-bullet')) ? $(pagination).css("background-color", "green") : $(pagination).css("background-color", "red")
+    // console.log(this)
+  })
+}
+
+delBullet();
+

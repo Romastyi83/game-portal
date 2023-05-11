@@ -1,7 +1,7 @@
 
 const settingsShowcaseSwiper = new Swiper('[data-showcase-slider]', {
   slidesPerView: 2,
-  allowTouchMove: true,
+  allowTouchMove: false,
   navigation: {
     nextEl: '[data-showcase-slider-next]',
     prevEl: '[data-showcase-slider-prev]',
@@ -14,6 +14,7 @@ const settingsShowcaseSwiper = new Swiper('[data-showcase-slider]', {
     320: {
       slidesPerView: 1,
       spaceBetween: 27,
+      allowTouchMove: true,
     },
     768: {
       slidesPerView: 2,
@@ -36,6 +37,7 @@ const initializationDelShowcaseSlide = function () {
         $(delSlide).closest('.swiper-slide').remove();
         settingsShowcaseSwiper.update();
         writeCounterShowcaseSlides();
+        delBullet();
       }, 100);
     });
   })
@@ -49,6 +51,7 @@ $('[data-add-showcase-slide]').each((index, addSlide) => {
     settingsShowcaseSwiper.update();
     initializationDelShowcaseSlide();
     writeCounterShowcaseSlides();
+    delBullet();
   });
 })
 
