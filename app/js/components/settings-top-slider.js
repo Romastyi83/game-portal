@@ -80,43 +80,12 @@ if ($('.popup__slider').is($('.swiper-pagination-bullet'))) {
 }
 
 const delBullet = function () {
-
   $('.swiper-pagination-bullets').each((index, pagination) => {
-
     if ($(pagination).children().length == 1) {
-      console.log(pagination)
-      $(pagination).parent($('.popup__slider')).css("opacity", "0")
+      $(pagination).parent($('.popup__slider')).css("display", "none")
     } else {
-      $(pagination).parent($('.popup__slider')).css("opacity", "1")
-      // console.log(pagination)
+      $(pagination).parent($('.popup__slider')).css("display", "flex")
     }
-
-    // $('.swiper-pagination-bullet').parent($(pagination)).each((index, bullet) => {
-
-    //   console.log(bullet)
-
-    //   if ($(bullet).length == 1) {
-    //     console.log(index)
-    //     $(pagination).css("background-color", "green")
-    //   } else {
-    //     $(pagination).css("background-color", "red")
-    //     console.log('x')
-    //     console.log(index)
-    //   }
-
-    // })
-
-
-    // if ($('.swiper-pagination-bullet').parent(pagination).length == 1) {
-    //   console.log(index)
-    //   $(pagination).css("background-color", "green")
-    // } else {
-    //   $(pagination).css("background-color", "red")
-    //   console.log('x')
-    //   console.log(index)
-    // }
-    // $(pagination).is($('.swiper-pagination-bullet')) ? $(pagination).css("background-color", "green") : $(pagination).css("background-color", "red")
-    // console.log(this)
   })
 }
 

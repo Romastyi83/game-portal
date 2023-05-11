@@ -38,6 +38,7 @@ const initializationDelContactsSlide = function () {
         settingsContactsSwiper.update();
         writeCounterContactsSlides();
         filiation();
+        delBullet();
       }, 100);
     });
   })
@@ -52,6 +53,7 @@ $('[data-add-contacts-slide]').each((index, addSlide) => {
     initializationDelContactsSlide();
     writeCounterContactsSlides();
     filiation();
+    delBullet();
   });
 })
 
