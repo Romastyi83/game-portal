@@ -100,6 +100,8 @@
       color #B6B6B6
     +modifier(icon)
       padding-right 35px
+    +modifier(date)
+      padding-right 10px
   +element(input-wrapper)
     position relative
   +element(img)
@@ -108,7 +110,6 @@
     right 11px
     transform translateY(-50%)
     cursor pointer
-  
   +element(item-del)
     position absolute
     top 0
@@ -138,3 +139,11 @@
       margin-bottom 17px
   +element(footer)
     max-width none
+  +element(img-date-holder)
+    position absolute
+    right 1px
+    top 50%
+    width 28px
+    background-color #fff
+    transform translateY(-50%)
+    pointer-events none
